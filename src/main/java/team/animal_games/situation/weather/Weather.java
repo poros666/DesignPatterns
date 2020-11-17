@@ -1,4 +1,4 @@
-package team.top.animal_games.situation.weather;
+package main.java.team.animal_games.situation.weather;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,17 +7,17 @@ public abstract class Weather {
     protected int temperature;
     protected int visibility;
 
-    public Weather(){
+    public Weather() {
         temperature = 0;
         visibility = 0;
-        System.out.println("Weather constructor is called!");
+        System.out.println("Weather::Weather() is called!");
     }
 
     public Map<String, Integer> getWeather() {
         Map<String, Integer> data = new HashMap<>();
-        data.put("temperature",temperature);
-        data.put("visibility",visibility);
-        System.out.println("Weather getWeather() is called!");
+        data.put("temperature", temperature);
+        data.put("visibility", visibility);
+        System.out.println("Weather::getWeather() is called!");
         return data;
     }
 }
