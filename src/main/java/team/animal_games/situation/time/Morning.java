@@ -6,13 +6,13 @@ public class Morning extends TimePeriod {
     public Morning() {
         temperatureAffect = (int) (-1 + Math.random() * 3);
         visibilityAffect = 1;
-        System.out.println("Morning constructor is called!");
+        System.out.println("Morning::Morning is called!");
     }
 
     public Map<String, Integer> getTime() {
         temperatureAffect = (int) (-1 + Math.random() * 3);
         visibilityAffect = 1;
-        System.out.println("Morning getTime() is called!");
+        System.out.println("Morning::getTime() is called!");
         return super.getTime();
     }
 }

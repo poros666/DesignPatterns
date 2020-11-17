@@ -30,7 +30,7 @@ public class Situation {
         } else {
             _time = new Afternoon();
         }
-        System.out.println("Situation constructor is called!");
+        System.out.println("Situation::Situation is called!");
     }
 
     public Situation() {
