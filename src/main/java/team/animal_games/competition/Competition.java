@@ -1,5 +1,6 @@
 package main.java.team.animal_games.competition;
 
+import main.java.team.animal_games.score.ScoreRecorder;
 import main.java.team.animal_games.situation.Situation;
 
 public abstract class Competition {
@@ -7,7 +8,8 @@ public abstract class Competition {
     //protected Stadium _stadium;
     //protected Rule _ruleSet;
     protected Situation _situation;
-    protected int[] _competitionResult;
+    public int[] _competitionResult;
+    abstract public int[] countScore(ScoreRecorder scoreRecorder);
 
     public Competition(){
         System.out.println("Competition::Competition()::\"constructor\"");

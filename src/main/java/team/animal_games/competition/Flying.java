@@ -1,5 +1,7 @@
 package main.java.team.animal_games.competition;
 
+import main.java.team.animal_games.score.ScoreRecorder;
+
 public class Flying extends Competition{
 
     protected int _distance;
@@ -18,5 +20,8 @@ public class Flying extends Competition{
         System.out.println("Flying::race()::");
         _competitionResult = new int[3];
         return new int[0];
+    }
+    public int[] countScore(ScoreRecorder scoreRecorder){
+        return scoreRecorder.recordScore(this);
     }
 }

@@ -1,5 +1,7 @@
 package main.java.team.animal_games.competition;
 
+import main.java.team.animal_games.score.ScoreRecorder;
+
 public class BasketballGame extends Competition{
 
     //protected BasketballKit basketballKit;
@@ -14,5 +16,9 @@ public class BasketballGame extends Competition{
         System.out.println("BasketballGame::race()::");
         _competitionResult = new int[3];
         return new int[0];
+    }
+
+    public int[] countScore(ScoreRecorder scoreRecorder){
+        return scoreRecorder.recordScore(this);
     }
 }
