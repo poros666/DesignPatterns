@@ -15,4 +15,8 @@ public abstract class Food {
 
     public abstract void showFood();
 
+    @Override
+    public String toString(){
+        return foodType+","+energy;
+    }
 }
