@@ -1,5 +1,6 @@
 package main.java.team.animal_games.competition;
 
+import main.java.team.animal_games.score.BasketballGameRecorder;
 import main.java.team.animal_games.score.ScoreRecorder;
 
 public class BasketballGame extends Competition{
@@ -15,10 +16,11 @@ public class BasketballGame extends Competition{
     public int[] race() {
         System.out.println("BasketballGame::race()::");
         _competitionResult = new int[3];
-        return new int[0];
+        return new int[3];
     }
 
-    public int[] countScore(ScoreRecorder scoreRecorder){
-        return scoreRecorder.recordScore(this);
+    @Override
+    public int[] getScore(){
+        return new BasketballGameRecorder().recordScore(this);
     }
 }

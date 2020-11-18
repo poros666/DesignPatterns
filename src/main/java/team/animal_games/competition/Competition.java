@@ -7,13 +7,17 @@ public abstract class Competition {
     //protected Animal _contestant;
     //protected Stadium _stadium;
     //protected Rule _ruleSet;
+    protected int date;//比赛举办日期
     protected Situation _situation;
     public int[] _competitionResult;
-    abstract public int[] countScore(ScoreRecorder scoreRecorder);
+
+    abstract public int[] getScore();//获取比赛结束后各队获得的积分
 
     public Competition(){
         System.out.println("Competition::Competition()::\"constructor\"");
     }
+
+    public int getDate(){return this.date;}//获取比赛日期
 
     public void startCompetition(){
         System.out.println("Competition::startCompetition()::\"competition started!\"");

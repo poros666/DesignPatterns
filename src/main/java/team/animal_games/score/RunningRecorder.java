@@ -5,9 +5,9 @@ import main.java.team.animal_games.competition.Competition;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class RunningRecorder {
+public class RunningRecorder implements ScoreRecorder{
     public int[] recordScore(Competition competition){
-        int[] rank=competition.race();
+        int[] rank=competition._competitionResult;
         int[][] sort=new int[rank.length][2];
         for(int i=0;i<rank.length;i++){
             sort[i][0]=i;
