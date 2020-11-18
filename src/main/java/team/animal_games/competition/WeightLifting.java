@@ -1,5 +1,7 @@
 package main.java.team.animal_games.competition;
 
+import main.java.team.animal_games.score.ScoreRecorder;
+
 public class WeightLifting extends Competition{
 
     //protected Barbell _barbells;
@@ -18,5 +20,8 @@ public class WeightLifting extends Competition{
         System.out.println("WeightLifting::race()::");
         _competitionResult = new int[3];
         return new int[0];
+    }
+    public int[] countScore(ScoreRecorder scoreRecorder){
+        return scoreRecorder.recordScore(this);
     }
 }
