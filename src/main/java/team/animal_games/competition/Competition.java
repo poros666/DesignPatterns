@@ -3,7 +3,6 @@ package main.java.team.animal_games.competition;
 import main.java.team.animal_games.rule.Rules;
 import main.java.team.animal_games.situation.Situation;
 import main.java.team.animal_games.state.Animal;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
@@ -67,23 +66,6 @@ public abstract class Competition {
         }
     }
 
-    private int transferStateStringToInt(@NotNull String state){
-        String excited = "excited";
-        String normal = "normal";
-        String sick = "sick";
-        String starve = "starve";
-        if(state.equals(excited)){
-            return 1;
-        }else if(state.equals(normal)){
-            return 0;
-        }else if(state.equals(sick)){
-            return -2;
-        }else if(state.equals(starve)){
-            return -1;
-        }
-        return 0;
-    }
-
     protected int[] getRank(int[] power){
         int[] ans = new int[3];
         ans[0]=ans[1]=ans[2]=0;
@@ -109,7 +91,7 @@ public abstract class Competition {
             System.out.println("contestant--team"+ index +":");
             for(Animal ani: team){
                 ani.showState();
-                animalPower += transferStateStringToInt(ani.getState().getState());
+                animalPower += ani.getState().getStateToInt();
             }
             power[index] = animalPower;
             System.out.println("team "+ index +" power is : "+animalPower);

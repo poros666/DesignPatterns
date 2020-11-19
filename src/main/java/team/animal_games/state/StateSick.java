@@ -1,13 +1,25 @@
+//author: Lei chen
 package main.java.team.animal_games.state;
 
-import main.java.team.animal_games.competition.Competition;
 
 public class StateSick extends State{
     public StateSick(){
         state="sick";
     }
-    public void handleState(Competition competition){
-        System.out.println("hello");
+    @Override
+    public void showState(){
+        System.out.format("State::showState(): %s!\n",this.state);
     }
-
+    @Override
+    public String getState(){
+        return this.state;
+    }
+    @Override
+    public boolean isNil(){
+        return false;
+    }
+    @Override
+    public int getStateToInt(){
+        return -2;
+    }
 }

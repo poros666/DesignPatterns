@@ -1,3 +1,4 @@
+//author: Lei chen
 package main.java.team.animal_games.score;
 
 import main.java.team.animal_games.competition.Competition;

@@ -1,25 +1,21 @@
 //author: Lei chen
 package main.java.team.animal_games.state;
-
-
-public class StateStarve extends State{
-    public StateStarve(){
-        state="starve";
-    }
+//无特殊状态，用作空对象
+public class NullState extends State{
     @Override
     public void showState(){
-        System.out.format("State::showState(): %s!\n",this.state);
+        System.out.println("State::showState(): Not any abnormal state.");
     }
     @Override
     public String getState(){
-        return this.state;
+        return "The current animal doesn't have any state";
     }
     @Override
     public boolean isNil(){
-        return false;
+        return true;
     }
     @Override
     public int getStateToInt(){
-        return -1;
+        return 0;
     }
 }
