@@ -4,18 +4,21 @@ package main.java.team.animal_games.state;
 public class Animal {
     public String name;
     private State state;
-    Animal(String name,State state){
-        this.name=name;
-        this.state=state;
+
+    public Animal(String name, State state) {
+        this.name = name;
+        this.state = state;
     }
-    public void setState(State state){
-        this.state=state;
+
+    public void setState(State state) {
+        this.state = state;
     }
-    public State getState(){
+
+    public State getState() {
         return this.state;
     }
 
-    public void showState(){
+    public void showState() {
         this.state.showState();
     }
 }

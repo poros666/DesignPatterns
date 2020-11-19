@@ -15,8 +15,11 @@ public class BasketballGame extends Competition{
     @Override
     public int[] race() {
         System.out.println("BasketballGame::race()::");
-        _competitionResult = new int[3];
-        return new int[3];
+        int[] power = animalPower();
+        //tianqi + power =
+        int[] ans = getRank(power);
+        _competitionResult = ans;
+        return ans;
     }
 
     @Override

@@ -9,7 +9,6 @@ public class Running extends Competition{
     protected int _distance;
 
     public Running(){
-        this.events="Running";
         if(Math.random()>0.5){
             _distance = 100;
         }else {
@@ -22,8 +21,11 @@ public class Running extends Competition{
     @Override
     public int[] race() {
         System.out.println("Running::race()::");
-        _competitionResult = new int[3];
-        return new int[0];
+        int[] power = animalPower();
+        //tianqi + power =
+        int[] ans = getRank(power);
+        _competitionResult = ans;
+        return ans;
     }
 
     @Override

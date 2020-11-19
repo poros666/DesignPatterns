@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 public class RunningRecorder implements ScoreRecorder{
     public int[] recordScore(Competition competition){
-        int[] rank=competition._competitionResult;
+        int[] rank = competition.get_competitionResult();
         int[][] sort=new int[rank.length][2];
         for(int i=0;i<rank.length;i++){
             sort[i][0]=i;

@@ -8,7 +8,6 @@ public class WeightLifting extends Competition{
     //protected Barbell _barbells;
 
     public WeightLifting(){
-        this.events="WeightLifting";
         //_barbells = new Barbells;
         System.out.println("WeightLifting::WeightLifting()::\" create a weightlifting game!\"");
     }
@@ -20,8 +19,11 @@ public class WeightLifting extends Competition{
     @Override
     public int[] race() {
         System.out.println("WeightLifting::race()::");
-        _competitionResult = new int[3];
-        return new int[0];
+        int[] power = animalPower();
+        //tianqi + power =
+        int[] ans = getRank(power);
+        _competitionResult = ans;
+        return ans;
     }
 
     @Override
