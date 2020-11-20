@@ -1,4 +1,4 @@
-package animal_games.Animal.Adapter;
+package main.java.team.animal_games.Animal.Adapter;
 
 public class TestAdapter {
     public static void main(String[] arg){

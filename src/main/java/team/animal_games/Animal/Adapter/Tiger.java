@@ -1,4 +1,4 @@
-package animal_games.Animal.Adapter;
+package main.java.team.animal_games.Animal.Adapter;
 
 import animal_games.Animal.Animal;
 

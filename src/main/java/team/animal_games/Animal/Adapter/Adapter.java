@@ -1,4 +1,4 @@
-package animal_games.Animal.Adapter;
+package main.java.team.animal_games.Animal.Adapter;
 
 public class Adapter extends Tiger implements FlyTiger{
     private Tiger adaptee;

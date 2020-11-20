@@ -1,9 +1,8 @@
-package animal_games.Animal.Builder;
+package main.java.team.animal_games.Animal.Builder;
 
 import animal_games.Animal.animals.Monkey;
 import animal_games.Animal.animals.Panda;
 
-import javax.swing.plaf.multi.MultiOptionPaneUI;
 
 public class TeamDirector {
     private TeamBuilder teamBuilder;
