@@ -3,16 +3,16 @@ package main.java.team.animal_games.competition;
 import main.java.team.animal_games.score.ScoreRecorder;
 import main.java.team.animal_games.score.WeightLiftingRecorder;
 
-public class WeightLifting extends Competition{
+public class WeightLifting extends Competition {
 
     //protected Barbell _barbells;
 
-    public WeightLifting(){
+    public WeightLifting() {
         //_barbells = new Barbells;
         System.out.println("WeightLifting::WeightLifting()::\" create a weightlifting game!\"");
     }
 
-    public void setBarbells(){
+    public void setBarbells() {
         System.out.println("WeightLifting::setBarbells()::\"set barbells to XXX KG\"");
     }
 
@@ -27,7 +27,7 @@ public class WeightLifting extends Competition{
     }
 
     @Override
-    public int[] getScore(){
+    public int[] getScore() {
         return new WeightLiftingRecorder().recordScore(this);
     }
 }

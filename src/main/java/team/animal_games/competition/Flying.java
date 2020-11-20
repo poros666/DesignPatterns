@@ -4,17 +4,17 @@ import main.java.team.animal_games.score.FlyingRecorder;
 import main.java.team.animal_games.score.ScoreRecorder;
 
 
-public class Flying extends Competition{
+public class Flying extends Competition {
 
     protected int _distance;
 
-    public Flying(){
-        if(Math.random()>0.5){
+    public Flying() {
+        if (Math.random() > 0.5) {
             _distance = 100;
-        }else {
+        } else {
             _distance = 1000;
         }
-        System.out.println("Flying::Flying()::\"create a "+_distance+" meters flying game!\"");
+        System.out.println("Flying::Flying()::\"create a " + _distance + " meters flying game!\"");
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Flying extends Competition{
     }
 
     @Override
-    public int[] getScore(){
+    public int[] getScore() {
         return new FlyingRecorder().recordScore(this);
     }
 }
