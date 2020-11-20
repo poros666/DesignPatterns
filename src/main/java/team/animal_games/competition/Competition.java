@@ -72,7 +72,8 @@ public abstract class Competition {
         }
     }
 
-    protected int[] getRank(int[] power){
+    //根据队伍能力点计算排名
+    protected int[] getRank(int[] power) {
         int[] ans = new int[3];
         ans[0] = ans[1] = ans[2] = 0;
         for (int p = 0; p < 3; p++) {
@@ -89,6 +90,7 @@ public abstract class Competition {
         return ans;
     }
 
+    //根据动物状态计算能力点
     protected int[] animalPower() {
         int[] power = new int[3];
         int index = 0;

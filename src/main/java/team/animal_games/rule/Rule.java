@@ -5,16 +5,16 @@ public class Rule {
     private String rule;
 
 
-    public Rule(){
-        name="";
-        rule="";
+    public Rule() {
+        name = "";
+        rule = "";
     }
 
-    public Rule(String name,String rule)
-    {
-        this.name=name;
-        this.rule=rule;
+    public Rule(String name, String rule) {
+        this.name = name;
+        this.rule = rule;
     }
+
     public String getName() {
         return name;
     }

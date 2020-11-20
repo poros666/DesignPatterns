@@ -20,7 +20,7 @@ public class Animal {
     }
 
     public void showState() {
-        System.out.format("Animal::shouState():%s's state:\n",this.name);
+        System.out.format("Animal::shouState():%s's state:\n", this.name);
         this.state.showState();
     }
 }

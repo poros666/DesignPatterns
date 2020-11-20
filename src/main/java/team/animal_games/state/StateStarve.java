@@ -2,24 +2,28 @@
 package main.java.team.animal_games.state;
 
 
-public class StateStarve extends State{
-    public StateStarve(){
-        state="starve";
+public class StateStarve extends State {
+    public StateStarve() {
+        state = "starve";
     }
+
     @Override
-    public void showState(){
-        System.out.format("State::showState(): %s!\n",this.state);
+    public void showState() {
+        System.out.format("State::showState(): %s!\n", this.state);
     }
+
     @Override
-    public String getState(){
+    public String getState() {
         return this.state;
     }
+
     @Override
-    public boolean isNil(){
+    public boolean isNil() {
         return false;
     }
+
     @Override
-    public int getStateToInt(){
+    public int getStateToInt() {
         return -1;
     }
 }

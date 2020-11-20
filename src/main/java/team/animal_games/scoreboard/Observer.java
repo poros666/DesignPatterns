@@ -4,18 +4,18 @@ import java.util.Vector;
 
 public class Observer {
     private Vector<Scoreboard> observer;
-    public void addScoreboard(Scoreboard scoreboard)
-    {
+
+    public void addScoreboard(Scoreboard scoreboard) {
         observer.add(scoreboard);
     }
-    public void remove(Scoreboard scoreboard)
-    {
+
+    public void remove(Scoreboard scoreboard) {
         observer.remove(scoreboard);
     }
-    public void notifyObserver(int day,int[]scores){
-        for(Scoreboard scoreboard:observer)
-        {
-            scoreboard.response(day,scores);
+
+    public void notifyObserver(int day, int[] scores) {
+        for (Scoreboard scoreboard : observer) {
+            scoreboard.response(day, scores);
         }
     }
 }
