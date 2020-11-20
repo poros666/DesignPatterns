@@ -1,4 +1,4 @@
-package animal_games.Animal.Strategy;
+package main.java.team.animal_games.Animal.Strategy;
 
 /**
  * @author Raven
