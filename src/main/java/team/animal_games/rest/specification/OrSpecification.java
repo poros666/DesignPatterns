@@ -1,7 +1,7 @@
-package animal_games.specification;
+package animal_games.rest.specification;
 /**
  * @className: OrSpecification
- * @package animal_games.specification
+ * @package animal_games.rest.specification
  * @description: this subclass make the || operation that can return the result which is made by left.isSatisfiedBy || right.isSatisfiedBy
  * @author: Dandelion
  * @date: 2020-11-19 19:43

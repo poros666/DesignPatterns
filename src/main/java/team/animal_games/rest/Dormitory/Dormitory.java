@@ -34,4 +34,26 @@ public abstract class Dormitory {
     public String getDetails() {
         return this.type + " Dormitory with " + this.style.getStyleType() + "Style Type";
     }
+
+    /**
+     * @methodName: getType
+     * @description: return the dormitory's type(air,land,aquatic)
+     * @param: []
+     * @return: animal_games.rest.Dormitory.DormitoryType
+     * @throws:
+     */
+    public DormitoryType getType(){
+        return this.type;
+    }
+
+    /**
+     * @methodName: getStyleType
+     * @description: return the dormitory's style's type(common,luxurious)
+     * @param: []
+     * @return: animal_games.rest.Dormitory.StyleType
+     * @throws:
+     */
+    public StyleType getStyleType(){
+        return this.style.getStyleType();
+    }
 }

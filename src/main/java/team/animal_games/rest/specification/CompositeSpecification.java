@@ -1,7 +1,7 @@
-package animal_games.specification;
+package animal_games.rest.specification;
 /**
  * @className: CompositeSpecification
- * @package animal_games.specification
+ * @package animal_games.rest.specification
  * @description: implement three method and leave one method isSatisfiedBy for the subclass to realize
  * @author: Dandelion
  * @date: 2020-11-19 19:34
@@ -21,7 +21,7 @@ public abstract class CompositeSpecification<T> implements Specification<T> {
      * @methodName: and
      * @description: return the result that this class make a && operation with another Specification
      * @param: [spec]
-     * @return: animal_games.specification.Specification<T>
+     * @return: animal_games.rest.specification.Specification<T>
      * @throws:
      */
     @Override
@@ -33,7 +33,7 @@ public abstract class CompositeSpecification<T> implements Specification<T> {
      * @methodName: not
      * @description: return the result that this class make a ! operation with itself
      * @param: []
-     * @return: animal_games.specification.Specification<T>
+     * @return: animal_games.rest.specification.Specification<T>
      * @throws:
      */
     @Override
@@ -44,7 +44,7 @@ public abstract class CompositeSpecification<T> implements Specification<T> {
      * @methodName: or
      * @description: return the result that this class make a || operation with another Specification
      * @param: [spec]
-     * @return: animal_games.specification.Specification<T>
+     * @return: animal_games.rest.specification.Specification<T>
      * @throws:
      */
     @Override

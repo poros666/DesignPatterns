@@ -1,8 +1,8 @@
-package animal_games.specification;
+package animal_games.rest.specification;
 
 /**
  * @className: EnergyMoreThan
- * @package animal_games.specification
+ * @package animal_games.rest.specification
  * @description: the concrete class that judge the food's energy is larger than this.energy or not
  * @author: Dandelion
  * @date: 2020-11-19 19:48

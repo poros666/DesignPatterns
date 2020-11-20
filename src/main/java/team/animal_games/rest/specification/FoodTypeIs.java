@@ -1,10 +1,10 @@
-package animal_games.specification;
+package animal_games.rest.specification;
 
 import animal_games.rest.Food.FoodType;
 
 /**
  * @className: FoodTypeIs
- * @package animal_games.specification
+ * @package animal_games.rest.specification
  * @description: the concrete class that judge the food's type is the specific type
  * @author: Dandelion
  * @date: 2020-11-19 20:03

@@ -2,10 +2,9 @@ package animal_games.test.DesignPatternTest;
 
 import animal_games.rest.Food.Food;
 import animal_games.rest.Food.FoodType;
-import animal_games.rest.Food.MealiePizza;
 import animal_games.rest.Food.MealiePizzaFactory;
-import animal_games.specification.EnergyMoreThan;
-import animal_games.specification.FoodTypeIs;
+import animal_games.rest.specification.EnergyMoreThan;
+import animal_games.rest.specification.FoodTypeIs;
 
 public class SpecificationTest {
     public static void main(String[] args) {

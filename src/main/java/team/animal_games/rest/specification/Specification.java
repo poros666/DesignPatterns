@@ -1,8 +1,8 @@
-package animal_games.specification;
+package animal_games.rest.specification;
 
 /**
  * @interfaceName: Specification
- * @package animal_games.specification
+ * @package animal_games.rest.specification
  * @description: the interface to define four method for CompositeSpecification to realize
  * @author: Dandelion
  * @date: 2020-11-19 19:07
@@ -22,7 +22,7 @@ public interface Specification<T> {
      * @methodName: and
      * @description: to make the && with another Specification to complete the complex requirement
      * @param: [spec]
-     * @return: animal_games.specification.Specification<T>
+     * @return: animal_games.rest.specification.Specification<T>
      * @throws:
      */
     Specification<T> and(Specification<T> spec);
@@ -31,7 +31,7 @@ public interface Specification<T> {
      * @methodName: not
      * @description: to make the ! with another Specification to complete the complex requirement
      * @param: [spec]
-     * @return: animal_games.specification.Specification<T>
+     * @return: animal_games.rest.specification.Specification<T>
      * @throws:
      */
     Specification<T> not();
@@ -40,7 +40,7 @@ public interface Specification<T> {
      * @methodName: or
      * @description: to make the || with another Specification to complete the complex requirement
      * @param: [spec]
-     * @return: animal_games.specification.Specification<T>
+     * @return: animal_games.rest.specification.Specification<T>
      * @throws:
      */
     Specification<T> or(Specification<T> spec);
