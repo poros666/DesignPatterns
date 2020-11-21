@@ -8,6 +8,8 @@ import animal_games.rest.specification.FoodTypeIs;
 
 public class SpecificationTest {
     public static void main(String[] args) {
+        System.out.println("—————————————-------------------------------------———— Test[Specification]Pattern —————————————-------------------------------------————");
+
         FoodType f = FoodType.meat;
         FoodTypeIs<Food> spec0 = new FoodTypeIs<>(f);
         EnergyMoreThan<Food> spec = new EnergyMoreThan<>(150);
@@ -17,5 +19,7 @@ public class SpecificationTest {
         } else {
             System.out.println("no");
         }
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
+
     }
 }

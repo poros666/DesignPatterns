@@ -8,6 +8,15 @@ import java.util.List;
 
 public class CriteriaTest {
     public static void main(String[] args) {
+        System.out.println("—————————————-------------------------------------———— Test[Criteria]Pattern —————————————-------------------------------------————");
+
+
+        testCriteria();
+
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
+    }
+
+    public static void testCriteria(){
         Style commonStyle=new CommonStyle();
         Style luxuriousStyle=new LuxuriousStyle();
         Dormitory dormitory1=new LandDormitory(commonStyle);
@@ -63,8 +72,8 @@ public class CriteriaTest {
 
         System.out.println("\nland_or_luxurious:");
         printDormitory(land_or_luxurious.meetCriteria(dormitoryList));
-
     }
+
 
     public static void printDormitory(List<Dormitory> dormitories) {
         for (Dormitory dormitory:dormitories){

@@ -17,7 +17,7 @@ public abstract class Style {
      *@return: animal_games.rest.Dormitory.StyleType
      *@throws:
      */
-    protected StyleType getStyleType() {
+    public StyleType getStyleType() {
         return styleType;
     }
 }
