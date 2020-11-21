@@ -65,7 +65,7 @@ public class InterpreterContext {
         flyAnimal.add(animal);
     }
 
-    public void usageInspection(String expr){
+    public boolean usageInspection(String expr){
         TerminalExpression juUser = new TerminalExpression(juniorUser);
         TerminalExpression seUser = new TerminalExpression(seniorUser);
         TerminalExpression suUser = new TerminalExpression(superiorUser);
@@ -75,19 +75,20 @@ public class InterpreterContext {
         junior = new AndExpression(juUser, juUsage);
         senior = new AndExpression(seUser, seUsage);
         superior = new AndExpression(suUser, suUsage);
+        return junior.interpret(expr)||senior.interpret(expr)||superior.interpret(expr);
 
     }
     public boolean actionInspection(String animal, String act){
         fly = new TerminalExpression(flyAnimal);
         swim = new TerminalExpression(swimAnimal);
         run = new TerminalExpression(runAnimal);
-        if(act == "fly"){
+        if("fly".equals(act)){
             return fly.interpret(animal);
         }
-        else if(act == "swim"){
+        else if("swim".equals(act)){
             return swim.interpret(animal);
         }
-        else if(act == "run"){
+        else if("run".equals(act)){
             return run.interpret(animal);
         }
         else{
