@@ -1,7 +1,5 @@
 package main.java.team.animal_games.Animal.Interpreter;
 
-import java.util.Set;
-
 /**
  * @author Raven
  */

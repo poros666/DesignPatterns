@@ -1,7 +1,7 @@
 package main.java.team.animal_games.Animal.Builder;
 
-import animal_games.Animal.animals.Monkey;
-import animal_games.Animal.animals.Panda;
+import main.java.team.animal_games.Animal.animals.Monkey;
+import main.java.team.animal_games.Animal.animals.Panda;
 
 
 public class TeamDirector {
