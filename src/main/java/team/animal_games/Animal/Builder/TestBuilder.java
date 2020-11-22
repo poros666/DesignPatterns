@@ -4,5 +4,6 @@ public class TestBuilder {
     public static void main(String[] arg){
         TeamDirector teamDirector = new TeamDirector();
         BasketballTeam blue = teamDirector.constructBlueTeam();
+        BasketballTeam red = teamDirector.constructRedTeam();
     }
 }

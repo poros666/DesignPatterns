@@ -1,8 +1,8 @@
 package main.java.team.animal_games.Animal.Adapter;
 
-import animal_games.Animal.Animal;
+import main.java.team.animal_games.Animal.Animal;
 
-public class Tiger extends Animal {
+public class Tiger /*extends Animal*/ {
     public void move(){
         System.out.println("现在这只老虎只能走。");
     }

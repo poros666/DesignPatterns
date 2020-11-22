@@ -1,6 +1,6 @@
 package main.java.team.animal_games.Animal.Builder;
 
-import animal_games.Animal.Animal;
+import main.java.team.animal_games.Animal.Animal;
 
 public class RedTeamBuilder implements TeamBuilder {
     private BasketballTeam redTeam;

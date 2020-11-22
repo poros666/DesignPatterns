@@ -1,6 +1,6 @@
 package main.java.team.animal_games.Animal.animals;
 
-import animal_games.Animal.Animal;
+import main.java.team.animal_games.Animal.Animal;
 
 public class Panda extends Animal {
     private final String position;

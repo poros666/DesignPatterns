@@ -1,9 +1,9 @@
 package main.java.team.animal_games.Animal.AbastractFactory;
 
-import animal_games.Animal.Animal;
+import main.java.team.animal_games.Animal.Animal;
 
 public abstract class AbstractFactory {
-    public abstract Animal createSeaAnimals();
-    public abstract Animal createLandAnimals();
-    public abstract Animal createSkyAnimals();
+    public abstract Animal createSeaAnimals(int a);
+    public abstract Animal createLandAnimals(int a);
+    public abstract Animal createSkyAnimals(int a);
 }

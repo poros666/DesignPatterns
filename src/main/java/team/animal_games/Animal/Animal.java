@@ -1,14 +1,43 @@
-package animal_games.Animal;
+package main.java.team.animal_games.Animal;
 import main.java.team.animal_games.state.State;
+
+import java.util.*;
 
 public class Animal {
     private State state;
     private String name;
+    /*
+    ****属性Map说明
+    * 力量STR 智力INT 体质CON 敏捷AGI 精神MEN 耐力VIT 幸运LUK 智慧WIS
+     */
+    private Map<String, Integer> attribute;
+    public Animal(){
+        attribute=new HashMap<String, Integer>();
+        Random r=new Random();
 
-    public Animal(){};
+        attribute.put("STR",(Integer)r.nextInt(10));
+        attribute.put("INT",(Integer)r.nextInt(10));
+        attribute.put("CON",(Integer)r.nextInt(10));
+        attribute.put("AGI",(Integer)r.nextInt(10));
+        attribute.put("MEN",(Integer)r.nextInt(10));
+        attribute.put("VIT",(Integer)r.nextInt(10));
+        attribute.put("LUK",(Integer)r.nextInt(10));
+        attribute.put("WIS",(Integer)r.nextInt(10));
+    };
     public Animal(State s, String n){
         this.state = s;
         this.name = n;
+        attribute=new HashMap<String, Integer>();
+        Random r=new Random();
+
+        attribute.put("STR",(Integer)r.nextInt(10));
+        attribute.put("INT",(Integer)r.nextInt(10));
+        attribute.put("CON",(Integer)r.nextInt(10));
+        attribute.put("AGI",(Integer)r.nextInt(10));
+        attribute.put("MEN",(Integer)r.nextInt(10));
+        attribute.put("VIT",(Integer)r.nextInt(10));
+        attribute.put("LUK",(Integer)r.nextInt(10));
+        attribute.put("WIS",(Integer)r.nextInt(10));
     }
 
     public void setName(String n){
@@ -25,5 +54,8 @@ public class Animal {
     }
     public void showState(){
         this.state.showState();
+    }
+    public Map<String,Integer> getAttribute(){
+        return this.attribute;
     }
 }
