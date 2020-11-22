@@ -9,5 +9,6 @@ public abstract class SkillDecorator extends Animal {
         this.ani = ani;
     }
 
-    public abstract double getCost();
+    @Override
+    public abstract double getWorth();
 }

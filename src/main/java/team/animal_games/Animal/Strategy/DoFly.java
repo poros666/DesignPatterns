@@ -17,7 +17,7 @@ public class DoFly implements ActionStrategy {
         int VIT = statistics.get("VIT");
         int LUK = statistics.get("LUK");
         int WIS = statistics.get("WIS");
-        weight = (CON + VIT + 8*AGI)*(0.9 + 0.1*LUK + 0.1*WIS);
+        weight = (CON + VIT + 8*AGI)*(0.8 + 0.01*LUK + 0.01*WIS);
         return weight;
     }
 }

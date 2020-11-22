@@ -17,7 +17,7 @@ public class DoRun implements ActionStrategy {
         int VIT = statistics.get("VIT");
         int LUK = statistics.get("LUK");
         int WIS = statistics.get("WIS");
-        weight = (8*CON + VIT + AGI)*(0.9 + 0.1*MEN + 0.1*WIS);
+        weight = (8*CON + VIT + AGI)*(0.8 + 0.01*MEN + 0.01*WIS);
         return weight;
     }
 }

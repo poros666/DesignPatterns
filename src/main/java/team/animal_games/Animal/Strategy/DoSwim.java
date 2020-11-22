@@ -17,7 +17,7 @@ public class DoSwim implements ActionStrategy {
         int VIT = statistics.get("VIT");
         int LUK = statistics.get("LUK");
         int WIS = statistics.get("WIS");
-        weight = (CON + 8*VIT + AGI)*(0.9 + 0.1*MEN + 0.1*LUK);
+        weight = (CON + 8*VIT + AGI)*(0.8 + 0.01*MEN + 0.01*LUK);
         return weight;
     };
 }

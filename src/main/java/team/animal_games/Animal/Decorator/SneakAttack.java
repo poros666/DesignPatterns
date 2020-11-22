@@ -8,7 +8,7 @@ public class SneakAttack extends SkillDecorator{
         super(ani);
     }
     @Override
-    public double getCost(){
+    public double getWorth(){
         return ani.getWorth() + 69;
     }
     @Override

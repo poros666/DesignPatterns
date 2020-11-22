@@ -8,5 +8,7 @@ public class DecoratorTest {
         Animal animal = new Animal();
         animal = new NoWood(animal);
         System.out.println(animal.getDescription() + " and it is worth " + animal.getWorth());
+        animal = new WellPrepared(animal);
+        System.out.println(animal.getDescription() + " and it is worth " + animal.getWorth());
     }
 }
