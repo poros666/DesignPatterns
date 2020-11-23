@@ -11,7 +11,7 @@ public class BridgeTest {
         while(true){
             try {
                 Style s;
-                System.out.println("输入要创建的style类型：1.Common，2.Luxurious,输入其他数字则退出:");
+                System.out.println("\n输入要创建的style类型：1.Common，2.Luxurious,输入其他数字则退出:");
                 Scanner sc = new Scanner(System.in);
                 Dormitory d;
                 int number=sc.nextInt();
@@ -40,7 +40,7 @@ public class BridgeTest {
                     break;
                 }
                 System.out.println(d.getDetails());
-                break;
+
             }catch (Exception e){
                 System.out.println("输入数字无效，重新输入");
             }

@@ -64,6 +64,7 @@ public class CriteriaTest {
         dormitoryList.add(dormitory9);
         dormitoryList.add(dormitory10);
         System.out.println("初始化宿舍完成");
+        printDormitory(dormitoryList);
         System.out.println("");
 
         System.out.println("初始化标准");
@@ -79,7 +80,7 @@ public class CriteriaTest {
 
         while(true){
             try {
-                System.out.println("输入过滤标准：1.air，2.land,3.aquatic,4.common,5.luxurious" +
+                System.out.println("\n输入过滤标准：1.air，2.land,3.aquatic,4.common,5.luxurious" +
                         ",6.air_and_common,7.land_or_luxurious,输入其他数字则退出:");
                 Scanner sc = new Scanner(System.in);
                 int number=sc.nextInt();
@@ -129,11 +130,8 @@ public class CriteriaTest {
                     default:{
                         break;
                     }
-
                 }
-
-
-                break;
+            break;
             }catch (Exception e){
                 System.out.println("输入数字无效，重新输入");
             }
@@ -144,7 +142,7 @@ public class CriteriaTest {
 
     public static void printDormitory(List<Dormitory> dormitories) {
         for (Dormitory dormitory:dormitories){
-            System.out.println("通过标准过滤得到的宿舍实例：Dormitory: Type:"+dormitory.getType()+", Style:"+dormitory.getStyleType());
+            System.out.println("得到的宿舍实例：Dormitory: Type:"+dormitory.getType()+", Style:"+dormitory.getStyleType());
         }
     }
 }

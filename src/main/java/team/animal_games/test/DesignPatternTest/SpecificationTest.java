@@ -65,7 +65,6 @@ public class SpecificationTest {
                 else {
                     break;
                 }
-                break;
             }catch (Exception e){
                 System.out.println("输入数字无效，重新输入");
             }
