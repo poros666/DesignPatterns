@@ -11,6 +11,11 @@ public class Animal {
         this.state = state;
     }
 
+    public Animal(String name){
+        this.name=name;
+        this.state=new NullState();
+    }
+
     public void setState(State state) {
         this.state = state;
     }
@@ -20,7 +25,6 @@ public class Animal {
     }
 
     public void showState() {
-        System.out.format("Animal::shouState():%s's state:\n", this.name);
         this.state.showState();
     }
 }
