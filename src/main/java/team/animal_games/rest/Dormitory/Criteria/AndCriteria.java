@@ -22,8 +22,7 @@ public class AndCriteria implements Criteria {
      * @param: [criteria, otherCriteria]
      */
     public AndCriteria(Criteria criteria, Criteria otherCriteria) {
-        System.out.println("AndCriteria:AndCriteria(Criteria criteria, Criteria otherCriteria):" +
-                "使用两种criteria创建AndCriteria");
+
         this.criteria = criteria;
         this.otherCriteria = otherCriteria;
     }
@@ -37,8 +36,7 @@ public class AndCriteria implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
-        System.out.println("AndCriteria:meetCriteria(List<Dormitory> dormitories):" +
-                "传入一个dormitory列表，分别使用类内部的两种criteria过滤取得交集");
+
         List<Dormitory> firstCriteriaPersons = criteria.meetCriteria(dormitories);
         return otherCriteria.meetCriteria(firstCriteriaPersons);
     }

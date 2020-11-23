@@ -17,7 +17,6 @@ public class MealiePizza extends Food {
     public MealiePizza() {
         this.foodType = FoodType.vegetarian;
         this.energy = 200;
-        System.out.println("MealiePizza:MealiePizza():MealiePizza的构造函数，说明工厂产品MealiePizza已经被创建");
     }
 
     /**

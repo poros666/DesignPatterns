@@ -17,7 +17,6 @@ public class AirDormitory extends Dormitory {
      */
     public AirDormitory(Style style) {
         super(style);
-        System.out.println("AirDormitory:AirDormitory(Style style):创建具体Dormitory类，设置类型为Air");
         this.type = DormitoryType.Air;
     }
 }

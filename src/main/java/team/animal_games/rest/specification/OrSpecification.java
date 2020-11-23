@@ -19,8 +19,7 @@ public class OrSpecification<T> extends CompositeSpecification<T> {
         super();
         this.left = left;
         this.right = right;
-        System.out.println("OrSpecification<T>:OrSpecification(Specification<T> left, Specification<T> right):" +
-                "使用传入的两个Specification创建一个新的OrSpecification");
+
     }
     /**
      * @methodName: isSatisfiedBy
@@ -31,7 +30,6 @@ public class OrSpecification<T> extends CompositeSpecification<T> {
      */
     @Override
     public boolean isSatisfiedBy(T o) {
-        System.out.println("OrSpecification<T>:isSatisfiedBy(T o):对于传入的o对象分别使用两个规格left,tight进行判断，返回两个返回结果的做或操作的结果");
         return left.isSatisfiedBy(o) || right.isSatisfiedBy(o);
     }
 }

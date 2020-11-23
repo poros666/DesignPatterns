@@ -18,7 +18,6 @@ public abstract class Style {
      *@throws:
      */
     public StyleType getType() {
-        System.out.println("Style:getType():返回Style类型");
         return styleType;
     }
 }

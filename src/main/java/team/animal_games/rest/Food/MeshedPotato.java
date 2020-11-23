@@ -17,7 +17,6 @@ public class MeshedPotato extends Food {
     public MeshedPotato() {
         this.foodType = FoodType.vegetarian;
         this.energy = 100;
-        System.out.println("MeshedPotato:MeshedPotato():MeshedPotato的构造函数，说明工厂产品MeshedPotato已经被创建");
     }
 
     /**

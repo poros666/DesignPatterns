@@ -24,8 +24,7 @@ public class CriteriaAquatic implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
-        System.out.println("CriteriaAquatic:meetCriteria(List<Dormitory> dormitories):" +
-                "返回传入的list中类型为Aquatic的元素组成的新的list");
+
         List<Dormitory> newDormitories = new ArrayList<>();
         for (Dormitory dormitory : dormitories) {
             if (dormitory.getType().equals(DormitoryType.Aquatic)) {

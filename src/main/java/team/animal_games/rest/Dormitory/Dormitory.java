@@ -20,7 +20,6 @@ public abstract class Dormitory {
      * @param: [style]
      */
     public Dormitory(Style style) {
-        System.out.println("Dormitory:Dormitory(Style style):Dormitory的构造函数，使用Style初始化Style");
         this.style = style;
     }
 
@@ -33,7 +32,6 @@ public abstract class Dormitory {
      * @throws:
      */
     public String getDetails() {
-        System.out.println("Dormitory:getDetails():返回Dormitory的类型和Style类型");
         return this.type + " Dormitory with " + this.style.getType() + "Style Type";
     }
 
@@ -45,7 +43,6 @@ public abstract class Dormitory {
      * @throws:
      */
     public DormitoryType getType(){
-        System.out.println("Dormitory:getType():返回Dormitory的类型");
         return this.type;
     }
 
@@ -57,7 +54,6 @@ public abstract class Dormitory {
      * @throws:
      */
     public StyleType getStyleType(){
-        System.out.println("Dormitory:getStyleType():返回Dormitory的Style类型");
         return this.style.getType();
     }
 }

@@ -17,7 +17,6 @@ public class LandDormitory extends Dormitory {
      */
     public LandDormitory(Style style) {
         super(style);
-        System.out.println("LandDormitory:LandDormitory(Style style):创建具体Dormitory类，设置类型为Land");
         this.type = DormitoryType.Land;
     }
 }

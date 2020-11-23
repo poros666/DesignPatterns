@@ -18,7 +18,6 @@ public class MealiePizzaFactory implements FoodFactory {
      */
     @Override
     public Food createFood() {
-        System.out.println("MealiePizzaFactory:createFood():具体工厂MealiePizzaFactory的createFood函数，用于创造具体工厂对应的具体食物MealiePizza");
         return new MealiePizza();
     }
 }

@@ -17,7 +17,6 @@ public class AquaticDormitory extends Dormitory {
      */
     public AquaticDormitory(Style style){
         super(style);
-        System.out.println("AquaticDormitory:AquaticDormitory(Style style):创建具体Dormitory类，设置类型为Aquatic");
         this.type=DormitoryType.Aquatic;
     }
 }

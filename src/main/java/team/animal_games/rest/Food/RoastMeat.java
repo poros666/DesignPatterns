@@ -17,7 +17,6 @@ public class RoastMeat extends Food {
     public RoastMeat() {
         this.foodType = FoodType.meat;
         this.energy = 150;
-        System.out.println("RoastMeat:RoastMeat():RoastMeat的构造函数，说明工厂产品RoastMeat已经被创建");
     }
 
     /**
