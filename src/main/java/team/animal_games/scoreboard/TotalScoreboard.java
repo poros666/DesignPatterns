@@ -1,7 +1,9 @@
 package main.java.team.animal_games.scoreboard;
 
+import main.java.team.animal_games.board_marker.Total;
+
 //Scoreboard that take all the scores in
-public class TotalScoreboard extends Scoreboard {
+public class TotalScoreboard extends Scoreboard implements Total {
 
     //refresh the scoreboard
     @Override

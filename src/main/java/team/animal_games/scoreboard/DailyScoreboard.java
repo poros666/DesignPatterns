@@ -1,7 +1,9 @@
 package main.java.team.animal_games.scoreboard;
 
+import main.java.team.animal_games.board_marker.Daily;
+
 //scoreboard that only take dailt result in
-public class DailyScoreboard extends Scoreboard {
+public class DailyScoreboard extends Scoreboard implements Daily {
 
     //the day it matches
     private int day;
