@@ -10,11 +10,11 @@ public class BasketballGameRecorder implements ScoreRecorder {
     public int[] recordScore(Competition competition) {
         int[] rank = competition.get_competitionResult();
         int[][] sort = new int[rank.length][2];
-        for (int i = 0; i < rank.length; i++) {
+        for (int i = 0; i < rank.length; i++) {//sort[i][0]表示队伍，sort[i][1]表示该队伍排名
             sort[i][0] = i;
             sort[i][1] = rank[i];
         }
-        Arrays.sort(sort, new Comparator<int[]>() {
+        Arrays.sort(sort, new Comparator<int[]>() {//重写按数组排序
             @Override
             public int compare(int[] o1, int[] o2) {
                 return o1[1] - o2[1];
