@@ -17,7 +17,8 @@ public abstract class Style {
      *@return: animal_games.rest.Dormitory.StyleType
      *@throws:
      */
-    public StyleType getStyleType() {
+    public StyleType getType() {
+        System.out.println("Style:getType():返回Style类型");
         return styleType;
     }
 }

@@ -24,6 +24,8 @@ public class CriteriaCommon implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
+        System.out.println("CriteriaCommon:meetCriteria(List<Dormitory> dormitories):" +
+                "返回传入的list中style类型为Common的元素组成的新的list");
         List<Dormitory> newDormitories = new ArrayList<>();
         for (Dormitory dormitory : dormitories) {
             if (dormitory.getStyleType().equals(StyleType.Common)) {

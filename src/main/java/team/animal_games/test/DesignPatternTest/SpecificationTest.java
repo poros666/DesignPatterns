@@ -9,16 +9,23 @@ import animal_games.rest.specification.FoodTypeIs;
 public class SpecificationTest {
     public static void main(String[] args) {
         System.out.println("—————————————-------------------------------------———— Test[Specification]Pattern —————————————-------------------------------------————");
+        System.out.println("");
+        System.out.println("");
 
-        FoodType f = FoodType.meat;
-        FoodTypeIs<Food> spec0 = new FoodTypeIs<>(f);
-        EnergyMoreThan<Food> spec = new EnergyMoreThan<>(150);
+
         Food mealiePizza = new MealiePizzaFactory().createFood();
-        if (spec0.and(spec).isSatisfiedBy(mealiePizza)) {
-            System.out.println("yes");
+        System.out.println("MealiePizza:toString():创建出来的食物属性是："+mealiePizza.toString());
+        FoodTypeIs<Food> foodTypeIsMeat = new FoodTypeIs<>(FoodType.meat);
+        EnergyMoreThan<Food> energyMoreThan150 = new EnergyMoreThan<>(150);
+        if (foodTypeIsMeat.or(energyMoreThan150).isSatisfiedBy(mealiePizza)) {
+            System.out.println("食物是否是能量大于150或者是肉类，判断的结果是：true");
         } else {
-            System.out.println("no");
+            System.out.println("食物是否是能量大于150或者是肉类，判断的结果是：false");
         }
+
+
+        System.out.println("");
+        System.out.println("");
         System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
 
     }

@@ -17,7 +17,10 @@ public class NotSpecification<T> extends CompositeSpecification<T> {
      * @param: [spec]
      */
     public NotSpecification(Specification<T> spec) {
+        super();
         this.spec = spec;
+        System.out.println("NotSpecification<T>:NotSpecification(Specification<T> spec):" +
+                "使用传入的Specification创建一个新的NotSpecification");
     }
 
     /**
@@ -29,6 +32,7 @@ public class NotSpecification<T> extends CompositeSpecification<T> {
      */
     @Override
     public boolean isSatisfiedBy(T o) {
+        System.out.println("NotSpecification<T>:isSatisfiedBy(T o):对于传入的o对象分别使用spec规格判断，返回其值的取反");
         return !spec.isSatisfiedBy(o);
     }
 }

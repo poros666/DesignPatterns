@@ -9,14 +9,19 @@ import java.util.List;
 public class CriteriaTest {
     public static void main(String[] args) {
         System.out.println("—————————————-------------------------------------———— Test[Criteria]Pattern —————————————-------------------------------------————");
-
+        System.out.println("");
+        System.out.println("");
 
         testCriteria();
+        System.out.println("");
+        System.out.println("");
 
         System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
     }
 
     public static void testCriteria(){
+
+        System.out.println("初始化宿舍");
         Style commonStyle=new CommonStyle();
         Style luxuriousStyle=new LuxuriousStyle();
         Dormitory dormitory1=new LandDormitory(commonStyle);
@@ -41,9 +46,10 @@ public class CriteriaTest {
         dormitoryList.add(dormitory8);
         dormitoryList.add(dormitory9);
         dormitoryList.add(dormitory10);
+        System.out.println("初始化宿舍完成");
+        System.out.println("");
 
-        printDormitory(dormitoryList);
-
+        System.out.println("初始化标准");
         Criteria air=new CriteriaAir();
         Criteria land=new CriteriaLand();
         Criteria aquatic=new CriteriaAquatic();
@@ -51,33 +57,22 @@ public class CriteriaTest {
         Criteria luxurious=new CriteriaLuxurious();
         Criteria air_and_common=new AndCriteria(air,common);
         Criteria land_or_luxurious=new OrCriteria(land,luxurious);
+        System.out.println("初始化标准完成");
+        System.out.println("");
 
-        System.out.println("\nair:");
+        System.out.println("开始过滤：");
+        System.out.println("\n过滤标准air:");
         printDormitory(air.meetCriteria(dormitoryList));
 
-        System.out.println("\nland:");
-        printDormitory(land.meetCriteria(dormitoryList));
-
-        System.out.println("\naquatic:");
-        printDormitory(aquatic.meetCriteria(dormitoryList));
-
-        System.out.println("\ncommon:");
-        printDormitory(common.meetCriteria(dormitoryList));
-
-        System.out.println("\nluxurious:");
-        printDormitory(luxurious.meetCriteria(dormitoryList));
-
-        System.out.println("\nair_and_common:");
+        System.out.println("\n过滤标准air_and_common:");
         printDormitory(air_and_common.meetCriteria(dormitoryList));
 
-        System.out.println("\nland_or_luxurious:");
-        printDormitory(land_or_luxurious.meetCriteria(dormitoryList));
     }
 
 
     public static void printDormitory(List<Dormitory> dormitories) {
         for (Dormitory dormitory:dormitories){
-            System.out.println("Dormitory: Type:"+dormitory.getType()+", Style:"+dormitory.getStyleType());
+            System.out.println("通过标准过滤得到的宿舍实例：Dormitory: Type:"+dormitory.getType()+", Style:"+dormitory.getStyleType());
         }
     }
 }

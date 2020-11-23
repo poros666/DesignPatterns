@@ -23,6 +23,8 @@ public class OrCriteria implements Criteria {
      * @param: [criteria, otherCriteria]
      */
     public OrCriteria(Criteria criteria, Criteria otherCriteria) {
+        System.out.println("OrCriteria:OrCriteria(Criteria criteria, Criteria otherCriteria):" +
+                "使用两种criteria创建OrCriteria");
         this.criteria = criteria;
         this.otherCriteria = otherCriteria;
     }
@@ -36,6 +38,8 @@ public class OrCriteria implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
+        System.out.println("OrCriteria:meetCriteria(List<Dormitory> dormitories):" +
+                "传入一个dormitory列表，分别使用类内部的两种criteria过滤取得并集");
         List<Dormitory> firstCriteriaItems = criteria.meetCriteria(dormitories);
         List<Dormitory> otherCriteriaItems = otherCriteria.meetCriteria(dormitories);
 

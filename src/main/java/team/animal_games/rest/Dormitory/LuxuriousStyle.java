@@ -16,6 +16,7 @@ public class LuxuriousStyle extends Style {
      * @param: []
      */
     public LuxuriousStyle() {
+        System.out.println("LuxuriousStyle:LuxuriousStyle():LuxuriousStyle的创建函数，设置类型为Luxurious");
         styleType = StyleType.Luxurious;
     }
 

@@ -16,6 +16,7 @@ public class CommonStyle extends Style {
      * @param: []
      */
     public CommonStyle() {
+        System.out.println("CommonStyle:CommonStyle():CommonStyle的创建函数，设置类型为Common");
         styleType = StyleType.Common;
     }
 

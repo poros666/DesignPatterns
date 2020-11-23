@@ -5,18 +5,13 @@ import animal_games.rest.Dormitory.*;
 public class BridgeTest {
     private static void testBridge(){
         Style commonStyle=new CommonStyle();
-        System.out.println("新建一个Style对象，commonStyle");
         Style luxuriousStyle=new LuxuriousStyle();
-        System.out.println("新建一个Style对象，luxuriousStyle");
         Dormitory aquaticDormitory=new AquaticDormitory(commonStyle);
-        System.out.println("使用commonStyle创建一个aquaticDormitory");
-        aquaticDormitory.getDetails();
+        System.out.println(aquaticDormitory.getDetails());
         Dormitory landDormitory=new LandDormitory(luxuriousStyle);
-        System.out.println("使用luxuriousStyle创建一个landDormitory");
-        landDormitory.getDetails();
+        System.out.println(landDormitory.getDetails());
         Dormitory airDormitory=new AirDormitory(commonStyle);
-        System.out.println("使用commonStyle创建一个airDormitory");
-        airDormitory.getDetails();
+        System.out.println(airDormitory.getDetails());
     }
 
     public static void main(String[] args) {

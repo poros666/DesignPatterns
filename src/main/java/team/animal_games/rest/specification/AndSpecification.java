@@ -19,6 +19,8 @@ public class AndSpecification<T> extends CompositeSpecification<T>{
         super();
         this.left = left;
         this.right = right;
+        System.out.println("AndSpecification<T>:AndSpecification(Specification<T> left, Specification<T> right):" +
+                "使用传入的两个Specification创建一个新的AndSpecification");
     }
     /**
      * @methodName: isSatisfiedBy
@@ -29,6 +31,7 @@ public class AndSpecification<T> extends CompositeSpecification<T>{
      */
     @Override
     public boolean isSatisfiedBy(T o) {
+        System.out.println("AndSpecification<T>:isSatisfiedBy(T o):对于传入的o对象分别使用两个规格left,right进行判断，返回两个返回结果的做与操作的结果");
         return left.isSatisfiedBy(o) && right.isSatisfiedBy(o);
     }
 }

@@ -18,6 +18,7 @@ public class RoastMeatFactory implements FoodFactory {
      */
     @Override
     public Food createFood() {
+        System.out.println("RoastMeatFactory:createFood():具体工厂RoastMeatFactory的createFood函数，用于创造具体工厂对应的具体食物RoastMeat");
         return new RoastMeat();
     }
 }
