@@ -20,6 +20,7 @@ public class Observer {
 
     //notify all the scoreboard in the container
     public void notifyObserver(int day, int[] scores) {
+        System.out.println("Observer::notifyObserver()::\"notify all the observers.\"");
         for (Scoreboard scoreboard : observer) {
             scoreboard.response(day, scores);
         }

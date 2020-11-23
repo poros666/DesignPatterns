@@ -30,6 +30,7 @@ public class Rules {
      * @return the singleton of rules
      */
     public Rules getInstance() {
+        System.out.println("Rules::getInstance()::\"get singleton\"");
         return instance;
     }
 
