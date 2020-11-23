@@ -32,7 +32,7 @@ public abstract class Dormitory {
      * @throws:
      */
     public String getDetails() {
-        return this.type + " Dormitory with " + this.style.getType() + "Style Type";
+        return getType() + " Dormitory with " + getStyleType() + "Style Type";
     }
 
     /**
