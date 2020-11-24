@@ -1,9 +1,9 @@
 package main.java.team.animal_games.equipment.clothes;
 
 
-public class BigBarbell extends Barbell {
+public class BigClothes extends Clothes {
 
-    public BigBarbell (){
+    public BigClothes(){
         type = "BigClothes";
         value= 100;
     }

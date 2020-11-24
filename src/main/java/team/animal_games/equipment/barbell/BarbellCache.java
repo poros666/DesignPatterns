@@ -7,7 +7,7 @@ public class BarbellCache {
     private static Hashtable<String, Barbell> BarbellMap
             = new Hashtable<String, Barbell>();
 
-    public static Barbell getValue(String barbellId) {
+    public static Barbell getId(String barbellId) {
         Barbell cachedBarbell = BarbellMap.get(barbellId);
         return (Barbell) cachedBarbell.clone();
     }

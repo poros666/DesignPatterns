@@ -10,7 +10,7 @@ public class EquipmentFactory {
         if(equipment == null) {
             equipment = new m_equipment(quality);
             equipMap.put(quality, equipment);
-            System.out.println("This equipment of quality : " + quality);
+            System.out.println("You got a new quality : " + quality+" !");
         }
         return equipment;
         }

@@ -1,6 +1,6 @@
-package main.java.team.animal_games.equipment.shoe;
+package main.java.team.animal_games.equipment.clothes;
 
-public abstract class Barbell implements Cloneable {
+public abstract class Clothes implements Cloneable {
 
     private String id;
     protected String type;

@@ -17,10 +17,19 @@ public class m_equipment implements Equipment {
         this.mult = mult;
     }
 
+    public int getPrice() {
+        return this.price;
+    }
+    public int getMult() {
+        return this.mult;
+    }
+    public String getQuality() {
+        return this.quality;
+    }
 
     @Override
     public void draw() {
-        System.out.println("Equipment: Draw() [quality : " + quality
+        System.out.println("Equipment: quality : " + quality
                 +", price : " + price +", multiplying power  :" + mult);
     }
 }

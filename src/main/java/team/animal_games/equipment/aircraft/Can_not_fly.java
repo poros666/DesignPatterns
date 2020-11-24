@@ -6,7 +6,7 @@ public class Can_not_fly extends Aircraft {
 
     public Can_not_fly(){
         type = "Can_not_fly";
-        value= 10000;
+        value= 500;
     }
 
     @Override

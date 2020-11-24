@@ -7,7 +7,7 @@ public class AeroCache {
     private static Hashtable<String, Aircraft> aeroMap
             = new Hashtable<String, Aircraft>();
 
-    public static Aircraft getValue(String aeroId) {
+    public static Aircraft getId(String aeroId) {
         Aircraft cachedAero = aeroMap.get(aeroId);
         return (Aircraft) cachedAero.clone();
     }

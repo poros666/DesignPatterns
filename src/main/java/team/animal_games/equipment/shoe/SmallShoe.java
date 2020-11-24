@@ -1,9 +1,9 @@
 package main.java.team.animal_games.equipment.shoe;
 
 
-public class SmallBarbell extends Barbell {
+public class SmallShoe extends Shoe {
 
-    public SmallBarbell(){
+    public SmallShoe(){
         type = "SmallShoe";
         value= 10;
     }
