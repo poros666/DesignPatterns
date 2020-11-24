@@ -2,6 +2,12 @@ package main.java.team.animal_games.competition;
 
 import main.java.team.animal_games.score.ScoreRecorder;
 
+/**
+ * @ClassName BasketballGame
+ * @Description subclass of competition, overriding race() and getScore
+ * @Author poros
+ * @Date 2020/11/24 23:00
+ **/
 public class BasketballGame extends Competition {
 
     //protected BasketballKit basketballKit;
