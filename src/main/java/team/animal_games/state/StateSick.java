@@ -9,7 +9,7 @@ public class StateSick extends State {
 
     @Override
     public void showState() {
-        System.out.format("State::showState(): %s!\n", this.state);
+        System.out.format("This animal is %s!\n", this.state);
     }
 
     @Override

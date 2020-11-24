@@ -1,6 +1,5 @@
 package main.java.team.animal_games.competition;
 
-import main.java.team.animal_games.score.RunningRecorder;
 import main.java.team.animal_games.score.ScoreRecorder;
 
 
@@ -29,7 +28,7 @@ public class Running extends Competition {
     }
 
     @Override
-    public int[] getScore() {
-        return new RunningRecorder().recordScore(this);
+    public int[] getScore(ScoreRecorder scoreRecorder) {
+        return scoreRecorder.recordScore(this);
     }
 }

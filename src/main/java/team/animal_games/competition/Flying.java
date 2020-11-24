@@ -1,6 +1,5 @@
 package main.java.team.animal_games.competition;
 
-import main.java.team.animal_games.score.FlyingRecorder;
 import main.java.team.animal_games.score.ScoreRecorder;
 
 
@@ -28,7 +27,7 @@ public class Flying extends Competition {
     }
 
     @Override
-    public int[] getScore() {
-        return new FlyingRecorder().recordScore(this);
+    public int[] getScore(ScoreRecorder scoreRecorder) {
+        return scoreRecorder.recordScore(this);
     }
 }
