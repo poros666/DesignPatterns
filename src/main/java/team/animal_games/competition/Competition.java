@@ -1,6 +1,7 @@
 package main.java.team.animal_games.competition;
 
 import main.java.team.animal_games.rule.Rules;
+import main.java.team.animal_games.score.ScoreRecorder;
 import main.java.team.animal_games.situation.Situation;
 import main.java.team.animal_games.state.Animal;
 
@@ -40,7 +41,7 @@ public abstract class Competition {
         this._date = date;
     }
 
-    abstract public int[] getScore();//获取比赛结束后各队获得的积分(使用时请区别于 排名 )
+    abstract public int[] getScore(ScoreRecorder scoreRecorder);//获取比赛结束后各队获得的积分(使用时请区别于 排名 )
 
     //模拟比赛过程的三个函数如下(此处使用了设计模式：Template Method)
     //startCompetition()用于模拟比赛开始的情况，属于父类实现的函数，没有实际用途

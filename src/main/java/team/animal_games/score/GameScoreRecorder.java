@@ -1,4 +1,3 @@
-//author: Lei chen
 package main.java.team.animal_games.score;
 
 import main.java.team.animal_games.competition.Competition;
@@ -6,7 +5,7 @@ import main.java.team.animal_games.competition.Competition;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class RunningRecorder implements ScoreRecorder {
+public class GameScoreRecorder implements ScoreRecorder{
     public int[] recordScore(Competition competition) {
         int[] rank = competition.get_competitionResult();
         int[][] sort = new int[rank.length][2];
@@ -22,9 +21,9 @@ public class RunningRecorder implements ScoreRecorder {
         });
         for (int i = 0; i < sort.length; i++) {
             if (i == 0) {
-                rank[sort[i][0]] = 5;
-            } else if (i == 1) {
                 rank[sort[i][0]] = 3;
+            } else if (i == 1) {
+                rank[sort[i][0]] = 2;
             } else if (i == 2) {
                 rank[sort[i][0]] = 1;
             } else {
