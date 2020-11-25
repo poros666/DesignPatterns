@@ -2,6 +2,12 @@ package main.java.team.animal_games.competition;
 
 import main.java.team.animal_games.score.ScoreRecorder;
 
+/**
+ * @ClassName Swimming
+ * @Description subclass of competition, overriding race() and getScore
+ * @Author poros
+ * @Date 2020/11/24 23:02
+ **/
 public class Swimming extends Competition {
 
     protected int _distance;
