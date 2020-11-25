@@ -1,5 +1,5 @@
-package animal_games.rest.Dormitory;
-import animal_games.rest.Dormitory.furniture.*;
+package main.java.team.animal_games.rest.Dormitory;
+import main.java.team.animal_games.rest.Dormitory.furniture.*;
 /**
  * @description The room class
  * @version 1.0

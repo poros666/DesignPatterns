@@ -1,13 +1,13 @@
-package animal_games.test.DesignPatternTest;
+package main.java.team.animal_games.test.DesignPatternTest;
 import java.util.Scanner;
-import  animal_games.rest.Memento.Manager;
-import animal_games.rest.Memento.BookingRecords;
-import animal_games.rest.Memento.ManageRecords;
-import animal_games.rest.Dormitory.Dormitory;
-import animal_games.rest.Dormitory.LuxuriousStyle;
-import animal_games.rest.Dormitory.CommonStyle;
-import animal_games.rest.Dormitory.LuxuriousRoomList;
-import animal_games.rest.Dormitory.CommonRoomList;
+import  main.java.team.animal_games.rest.Memento.Manager;
+import main.java.team.animal_games.rest.Memento.BookingRecords;
+import main.java.team.animal_games.rest.Memento.ManageRecords;
+import main.java.team.animal_games.rest.Dormitory.Dormitory;
+import main.java.team.animal_games.rest.Dormitory.LuxuriousStyle;
+import main.java.team.animal_games.rest.Dormitory.CommonStyle;
+import main.java.team.animal_games.rest.Dormitory.LuxuriousRoomList;
+import main.java.team.animal_games.rest.Dormitory.CommonRoomList;
 public class MementoTest {
     public Manager manager = new Manager();
     public ManageRecords manageRecords = new ManageRecords();

@@ -1,6 +1,6 @@
-package animal_games.rest.specification;
+package main.java.team.animal_games.rest.specification;
 
-import animal_games.rest.Food.FoodType;
+import main.java.team.animal_games.rest.Food.FoodType;
 
 /**
  * @className: FoodTypeIs

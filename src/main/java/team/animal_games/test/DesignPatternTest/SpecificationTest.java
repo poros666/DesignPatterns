@@ -1,8 +1,8 @@
-package animal_games.test.DesignPatternTest;
+package main.java.team.animal_games.test.DesignPatternTest;
 
-import animal_games.rest.Food.*;
-import animal_games.rest.specification.EnergyMoreThan;
-import animal_games.rest.specification.FoodTypeIs;
+import main.java.team.animal_games.rest.Food.*;
+import main.java.team.animal_games.rest.specification.EnergyMoreThan;
+import main.java.team.animal_games.rest.specification.FoodTypeIs;
 
 import java.util.Scanner;
 

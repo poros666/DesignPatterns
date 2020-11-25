@@ -1,4 +1,4 @@
-package animal_games.rest.Dormitory.furniture;
+package main.java.team.animal_games.rest.Dormitory.furniture;
 
 import java.util.HashMap;
 

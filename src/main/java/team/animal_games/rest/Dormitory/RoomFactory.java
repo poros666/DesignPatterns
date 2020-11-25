@@ -1,4 +1,4 @@
-package animal_games.rest.Dormitory;
+package main.java.team.animal_games.rest.Dormitory;
 /**
  * @description The room factory class
  * @version 1.0

@@ -1,4 +1,4 @@
-package animal_games.rest.Dormitory.furniture;
+package main.java.team.animal_games.rest.Dormitory.furniture;
 
 /**
  * @description The class for bed
@@ -6,7 +6,7 @@ package animal_games.rest.Dormitory.furniture;
  * @author dabao
  * @date 2020/11/24 23:31
  */
-public class Bed extends  animal_games.rest.Dormitory.furniture.Furniture {
+public class Bed extends  Furniture {
     /**
      * @className: Bed
      * @description: create the bed

@@ -1,4 +1,4 @@
-package animal_games.rest.Memento;
+package main.java.team.animal_games.rest.Memento;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

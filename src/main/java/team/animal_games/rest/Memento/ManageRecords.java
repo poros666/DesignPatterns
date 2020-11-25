@@ -1,4 +1,4 @@
-package animal_games.rest.Memento;
+package main.java.team.animal_games.rest.Memento;
 
 import java.awt.print.Book;
 import java.util.ArrayList;

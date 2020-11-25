@@ -1,7 +1,7 @@
-package animal_games.test.DesignPatternTest;
+package main.java.team.animal_games.test.DesignPatternTest;
 //import animal_games.rest.Dormitory.CommonStyle;
-import animal_games.rest.Dormitory.*;
-import animal_games.rest.Dormitory.furniture.FurnitureKind;
+import main.java.team.animal_games.rest.Dormitory.*;
+import main.java.team.animal_games.rest.Dormitory.furniture.FurnitureKind;
 
 public class ReferenceCountingTest {
     //private  CommonStyle commonStyle=new CommonStyle();

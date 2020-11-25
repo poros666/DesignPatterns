@@ -1,11 +1,11 @@
-package animal_games.rest.Dormitory.furniture;
+package main.java.team.animal_games.rest.Dormitory.furniture;
 /**
  * @description The class for dest
  * @version 1.0
  * @author dabao
  * @date 2020/11/24 23:32
  */
-public class Desk extends  animal_games.rest.Dormitory.furniture.Furniture {
+public class Desk extends  Furniture {
     /**
      * @className: Desk
      * @description: create the Desk

@@ -1,4 +1,4 @@
-package animal_games.rest.Dormitory;
+package main.java.team.animal_games.rest.Dormitory;
 
 import java.util.ArrayList;
 import java.util.HashMap;

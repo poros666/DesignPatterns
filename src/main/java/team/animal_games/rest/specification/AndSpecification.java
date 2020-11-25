@@ -1,4 +1,4 @@
-package animal_games.rest.specification;
+package main.java.team.animal_games.rest.specification;
 /**
  * @className: AndSpecification
  * @package animal_games.rest.specification

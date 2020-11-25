@@ -1,4 +1,4 @@
-package animal_games.rest.Food;
+package main.java.team.animal_games.rest.Food;
 
 /**
  * @className: MealiePizza

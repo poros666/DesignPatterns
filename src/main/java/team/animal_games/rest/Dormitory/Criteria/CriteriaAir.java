@@ -1,7 +1,7 @@
-package animal_games.rest.Dormitory.Criteria;
+package main.java.team.animal_games.rest.Dormitory.Criteria;
 
-import animal_games.rest.Dormitory.Dormitory;
-import animal_games.rest.Dormitory.DormitoryType;
+import main.java.team.animal_games.rest.Dormitory.Dormitory;
+import main.java.team.animal_games.rest.Dormitory.DormitoryType;
 
 import java.util.ArrayList;
 import java.util.List;
