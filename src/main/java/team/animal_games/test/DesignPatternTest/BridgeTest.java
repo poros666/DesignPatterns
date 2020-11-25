@@ -1,6 +1,6 @@
-package animal_games.test.DesignPatternTest;
+package main.java.team.animal_games.test.DesignPatternTest;
 
-import animal_games.rest.Dormitory.*;
+import main.java.team.animal_games.rest.Dormitory.*;
 
 import java.util.Scanner;
 
