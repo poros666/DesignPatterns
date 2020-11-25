@@ -2,12 +2,6 @@ package main.java.team.animal_games.competition;
 
 import main.java.team.animal_games.score.ScoreRecorder;
 
-/**
- * @ClassName WeightLifting
- * @Description subclass of competition, overriding race() and getScore
- * @Author poros
- * @Date 2020/11/24 23:02
- **/
 public class WeightLifting extends Competition {
 
     //protected Barbell _barbells;

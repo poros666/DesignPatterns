@@ -7,8 +7,8 @@ import java.util.List;
 
 
 public class ScoreResult {
-    private List<Competition> teamScore;//存放比赛
-    private int[] result;//存放各队伍得分总和
+    private List<Competition> teamScore;
+    private int[] result;
 
     public ScoreResult() {
         teamScore = new LinkedList<>();
@@ -16,14 +16,14 @@ public class ScoreResult {
     }
 
     public void add(Competition competition) {
-        this.teamScore.add(competition);
-    }//添加比赛
+        teamScore.add(competition);
+    }
 
     public void remove(Competition competition) {
-        this.teamScore.remove(competition);
-    }//移除比赛
+        teamScore.remove(competition);
+    }
 
-    public int[] accept(ScoreRecorder scoreRecorder) {//对所有比赛统计各队伍获得积分
+    public int[] accept(ScoreRecorder scoreRecorder) {
         for(Competition comp:teamScore){
             int[] score=comp.getScore(scoreRecorder);
             for(int i=0;i<3;i++){

@@ -7,13 +7,6 @@ import main.java.team.animal_games.state.Animal;
 
 import java.util.Map;
 
-
-/**
- * @ClassName Competition
- * @Description competition class is a class representing competition, Containing the process of competition.
- * @Author poros
- * @Date 2020/11/24 22:59
- **/
 public abstract class Competition {
     protected Animal[][] _contestant = new Animal[3][];//参赛队伍固定为三组，每组队伍都是以一个Animal数组
     //protected Stadium _stadium;
@@ -106,7 +99,6 @@ public abstract class Competition {
             int animalPower = 0;
             System.out.println("contestant--team" + index + ":");
             for (Animal ani : team) {
-                System.out.printf("[" + ani.name + "]:");
                 ani.showState();
                 animalPower += ani.getState().getStateToInt();
             }

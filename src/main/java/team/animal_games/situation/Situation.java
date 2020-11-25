@@ -11,12 +11,6 @@ import main.java.team.animal_games.situation.weather.Weather;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @ClassName Situation
- * @Description Facade class of Weather and TimePeriod
- * @Author poros
- * @Date 2020/11/24 23:02
- **/
 public class Situation {
     //此处使用了设计模式：Facade Pattern
     //将天气和时间两个子系统利用Situation这个类包装起来，以便快速的获取 温度和能见度 这两个 和 天气及时间 都相关的属性
@@ -53,8 +47,6 @@ public class Situation {
     //此处使用了设计模式：Strategy Pattern
     //天气和时间都是策略类，根据不同的子类，将会执行不同的getWeather，getTime
     public Map<String, Integer> getSituation() {
-        System.out.println("Situation::getSituation()::generate temperature and visibility by calling specific" +
-                " (_weather and _time)`s getWeather() and getTime()!");
         Map<String, Integer> data = new HashMap<>();
         Map<String, Integer> weatherM = _weather.getWeather();
         Map<String, Integer> timeM = _time.getTime();

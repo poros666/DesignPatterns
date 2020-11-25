@@ -6,7 +6,7 @@ public class Rules {
     //a container that contains rules
     private static Vector<Rule> rules;
     //the singleton of rules
-    private static Rules instance=new Rules();
+    private Rules instance;
 
     //private constructor
     private Rules() {
@@ -29,17 +29,14 @@ public class Rules {
     /**
      * @return the singleton of rules
      */
-    public static Rules getInstance() {
+    public Rules getInstance() {
         System.out.println("Rules::getInstance()::\"get singleton\"");
         return instance;
     }
 
     //use the name of the game to find the rule matched
     public String getRule(String name) {
-        if(findRule(name)!=null)
         return findRule(name).getRule();
-        else
-            return "No this game";
     }
 
     //set the rule
