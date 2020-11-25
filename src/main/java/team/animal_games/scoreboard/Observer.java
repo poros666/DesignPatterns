@@ -8,6 +8,9 @@ public class Observer {
     //observer contains all the scoreboards
     private Vector<Scoreboard> observer;
 
+    public Observer(){
+        observer=new Vector<>();
+    }
     //add scoreboard into the container
     public void addScoreboard(Scoreboard scoreboard) {
         observer.add(scoreboard);

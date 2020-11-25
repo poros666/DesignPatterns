@@ -72,8 +72,6 @@ public class VisitorTest {
         result.add(mycF);
         result.add(mycR);
         System.out.println("ScoreResult::accept(ScoreRecorder)::遍历容器中所有比赛,得出各队当天总积分");
-        int[] test1=mycF.getScore(new GameScoreRecorder());
-        int[] test2=mycR.getScore(new GameScoreRecorder());
         int[] testArray=result.accept(new GameScoreRecorder());
         for(int i=0;i<testArray.length;i++){
             System.out.format("第%d队获得积分%d\n",i+1,testArray[i]);
