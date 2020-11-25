@@ -27,7 +27,7 @@ public class CriteriaAquatic implements Criteria {
 
         List<Dormitory> newDormitories = new ArrayList<>();
         for (Dormitory dormitory : dormitories) {
-            if (dormitory.getType().equals(DormitoryType.Aquatic)) {
+            if (dormitory.getDormitoryType().equals(DormitoryType.Aquatic)) {
                 newDormitories.add(dormitory);
             }
         }

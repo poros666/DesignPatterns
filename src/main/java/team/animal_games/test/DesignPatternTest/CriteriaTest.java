@@ -143,6 +143,7 @@ public class CriteriaTest {
     public static void printDormitory(List<Dormitory> dormitories) {
         for (Dormitory dormitory:dormitories){
             System.out.println("得到的宿舍实例：Dormitory: Type:"+dormitory.getType()+", Style:"+dormitory.getStyleType());
+
         }
     }
 }

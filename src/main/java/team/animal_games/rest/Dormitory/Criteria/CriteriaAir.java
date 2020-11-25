@@ -27,7 +27,7 @@ public class CriteriaAir implements Criteria {
 
         List<Dormitory> newDormitories = new ArrayList<>();
         for (Dormitory dormitory : dormitories) {
-            if (dormitory.getType().equals(DormitoryType.Air)) {
+            if (dormitory.getDormitoryType().equals(DormitoryType.Air)) {
                 newDormitories.add(dormitory);
             }
         }
