@@ -19,5 +19,6 @@ public class AirDormitory extends Dormitory {
         super(style);
         this.type = DormitoryType.Air;
     }
+
 }
 

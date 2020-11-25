@@ -17,7 +17,9 @@ public class NotSpecification<T> extends CompositeSpecification<T> {
      * @param: [spec]
      */
     public NotSpecification(Specification<T> spec) {
+        super();
         this.spec = spec;
+
     }
 
     /**

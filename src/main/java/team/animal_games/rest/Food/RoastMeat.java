@@ -17,7 +17,6 @@ public class RoastMeat extends Food {
     public RoastMeat() {
         this.foodType = FoodType.meat;
         this.energy = 150;
-        showFood();
     }
 
     /**

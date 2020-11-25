@@ -23,6 +23,7 @@ public class OrCriteria implements Criteria {
      * @param: [criteria, otherCriteria]
      */
     public OrCriteria(Criteria criteria, Criteria otherCriteria) {
+
         this.criteria = criteria;
         this.otherCriteria = otherCriteria;
     }
@@ -36,6 +37,7 @@ public class OrCriteria implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
+
         List<Dormitory> firstCriteriaItems = criteria.meetCriteria(dormitories);
         List<Dormitory> otherCriteriaItems = otherCriteria.meetCriteria(dormitories);
 

@@ -31,6 +31,7 @@ public class FoodTypeIs<T> extends CompositeSpecification<T> {
      */
     @Override
     public boolean isSatisfiedBy(T o) {
+
         String[] str = o.toString().split(",");
         return str[0].equals(foodType.toString());
     }

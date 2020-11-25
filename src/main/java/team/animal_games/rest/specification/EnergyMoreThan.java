@@ -30,6 +30,7 @@ public class EnergyMoreThan<T> extends CompositeSpecification<T> {
      */
     @Override
     public boolean isSatisfiedBy(T o) {
+
         String[] str = o.toString().split(",");
         return Integer.parseInt(str[1]) > energy;
     }

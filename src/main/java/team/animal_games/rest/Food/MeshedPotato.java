@@ -17,7 +17,6 @@ public class MeshedPotato extends Food {
     public MeshedPotato() {
         this.foodType = FoodType.vegetarian;
         this.energy = 100;
-        showFood();
     }
 
     /**

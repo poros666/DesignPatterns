@@ -24,6 +24,7 @@ public class CriteriaCommon implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
+
         List<Dormitory> newDormitories = new ArrayList<>();
         for (Dormitory dormitory : dormitories) {
             if (dormitory.getStyleType().equals(StyleType.Common)) {

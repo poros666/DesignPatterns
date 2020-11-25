@@ -17,7 +17,6 @@ public class MealiePizza extends Food {
     public MealiePizza() {
         this.foodType = FoodType.vegetarian;
         this.energy = 200;
-        showFood();
     }
 
     /**

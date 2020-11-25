@@ -19,6 +19,7 @@ public class OrSpecification<T> extends CompositeSpecification<T> {
         super();
         this.left = left;
         this.right = right;
+
     }
     /**
      * @methodName: isSatisfiedBy

@@ -22,6 +22,7 @@ public class AndCriteria implements Criteria {
      * @param: [criteria, otherCriteria]
      */
     public AndCriteria(Criteria criteria, Criteria otherCriteria) {
+
         this.criteria = criteria;
         this.otherCriteria = otherCriteria;
     }
@@ -35,6 +36,7 @@ public class AndCriteria implements Criteria {
      */
     @Override
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
+
         List<Dormitory> firstCriteriaPersons = criteria.meetCriteria(dormitories);
         return otherCriteria.meetCriteria(firstCriteriaPersons);
     }
