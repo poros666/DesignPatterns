@@ -11,9 +11,9 @@ public class Animal {
         this.state = state;
     }
 
-    public Animal(String name){
-        this.name=name;
-        this.state=new NullState();
+    public Animal(String name) {
+        this.name = name;
+        this.state = new NullState();
     }
 
     public void setState(State state) {
