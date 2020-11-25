@@ -24,7 +24,7 @@ public class GetEquipment {
     }
     public static void getEquipment(String name) {
         double ratio = Math.random();
-        m_equipment equipment = (m_equipment) EquipmentFactory.getEquipment(getRandomColor(ratio));
+        Quality equipment = (Quality) EquipmentFactory.getEquipment(getRandomColor(ratio));
         equipment.setPrice(getRandomPrice(ratio));
         equipment.setMult(getRandomMult(ratio));
         switch (name) {
