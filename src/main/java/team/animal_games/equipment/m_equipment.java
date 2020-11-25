@@ -1,11 +1,11 @@
 package main.java.team.animal_games.equipment;
 
-public class Quality implements Equipment {
+public class m_equipment implements Equipment {
     private String quality;
     private int price;
     private int mult;
 
-    public Quality(String quality){
+    public m_equipment(String quality){
         this.quality = quality;
     }
 

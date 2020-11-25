@@ -1,7 +1,6 @@
 package main.java.team.animal_games.equipment;
 import main.java.team.animal_games.equipment.aircraft.*;
 
-
 public class DistributeEquipmentDemo {
     private static final String equipment[] =
         {  "White","Green", "Blue", "Purple", "Golden" };
@@ -16,7 +15,7 @@ public class DistributeEquipmentDemo {
             default -> System.out.println("There is no aircraft like that!");
         }
         double ratio=Math.random();
-        Quality equipment = (Quality)EquipmentFactory. getEquipment(getRandomColor(ratio));
+        m_equipment equipment = (m_equipment)EquipmentFactory. getEquipment(getRandomColor(ratio));
         equipment.setPrice(getRandomPrice(ratio));
         equipment.setMult(getRandomMult(ratio));
         System.out.println("Aircraft : "+equipment.getQuality() +" "+ aero.getType()+", value : "+aero.getValue()*equipment.getMult()+", Price : "+aero.getValue()*equipment.getPrice());
