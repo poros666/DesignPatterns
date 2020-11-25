@@ -26,7 +26,7 @@ public class CriteriaLand implements Criteria {
     public List<Dormitory> meetCriteria(List<Dormitory> dormitories) {
         List<Dormitory> newDormitories = new ArrayList<>();
         for (Dormitory dormitory : dormitories) {
-            if (dormitory.getType().equals(DormitoryType.Land)) {
+            if (dormitory.getDormitoryType().equals(DormitoryType.Land)) {
                 newDormitories.add(dormitory);
             }
         }

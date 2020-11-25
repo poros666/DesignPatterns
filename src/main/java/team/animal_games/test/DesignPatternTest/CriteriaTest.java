@@ -68,7 +68,7 @@ public class CriteriaTest {
 
     public static void printDormitory(List<Dormitory> dormitories) {
         for (Dormitory dormitory:dormitories){
-            System.out.println("Dormitory: Type:"+dormitory.getType()+", Style:"+dormitory.getStyleType());
+            System.out.println("Dormitory: Type:"+dormitory.getDormitoryType()+", Style:"+dormitory.getStyleType());
         }
     }
 }
