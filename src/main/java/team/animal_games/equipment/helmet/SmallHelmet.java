@@ -5,7 +5,7 @@ public class SmallHelmet extends Helmet {
 
     public SmallHelmet(){
         type = "SmallBasketball";
-        value= 10;
+        value= 20;
     }
 
     @Override

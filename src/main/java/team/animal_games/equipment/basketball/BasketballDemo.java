@@ -4,11 +4,11 @@ public class BasketballDemo {
     public static void main(String[] args) {
         BasketballCache.loadCache();
 
-        Basketball basketball1 = (Basketball) BasketballCache.getId("1");
-        System.out.println("Basketball : " + basketball1.getType());
+        Basketball basketball1 = BasketballCache.getId("1");
+        System.out.println("Basketball : " + basketball1.getType()+", value : "+basketball1.getValue());
 
-        Basketball basketball2 = (Basketball) BasketballCache.getId("2");
-        System.out.println("Basketball : " + basketball2.getType());
+        Basketball basketball2 = BasketballCache.getId("2");
+        System.out.println("Basketball : " + basketball2.getType()+", value : "+basketball2.getValue());
 
     }
 }

@@ -5,7 +5,7 @@ public class SmallClothes extends Clothes {
 
     public SmallClothes(){
         type = "SmallClothes";
-        value= 10;
+        value= 50;
     }
 
     @Override

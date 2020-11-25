@@ -5,7 +5,7 @@ public class SmallBasketball extends Basketball {
 
     public SmallBasketball(){
         type = "SmallBasketball";
-        value= 10;
+        value= 30;
     }
 
     @Override

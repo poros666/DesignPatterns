@@ -5,7 +5,7 @@ public class BigHelmet extends Helmet {
 
     public BigHelmet(){
         type = "BigHelmet";
-        value= 100;
+        value= 30;
     }
 
     @Override

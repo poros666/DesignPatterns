@@ -5,7 +5,7 @@ public class BigShoe extends Shoe {
 
     public BigShoe(){
         type = "BigShoe";
-        value= 100;
+        value= 15;
     }
 
     @Override
