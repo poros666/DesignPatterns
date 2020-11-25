@@ -14,7 +14,11 @@ public class Room {
 
     public Room(){
     }
-
+    /**
+     * @className: Room
+     * @description: create the furniture in the room
+     * @param: [i]
+     */
     public Room(int i){
         roomId = i;
         FurnitureFactory furnitureFactory = FurnitureFactory.getInstance();
@@ -22,7 +26,13 @@ public class Room {
         chair = (Chair)furnitureFactory.getFurnitureByKind(FurnitureKind.Chair);
         desk = (Desk)furnitureFactory.getFurnitureByKind(FurnitureKind.Desk);
     }
-
+    /**
+     * @methodName: moveFurniture
+     * @description:   move Furniture in the room
+     * @param: [kind]
+     * @return: void
+     * @throws:
+     */
     public void moveFurniture(FurnitureKind kind){
         switch (kind){
             case Bed:

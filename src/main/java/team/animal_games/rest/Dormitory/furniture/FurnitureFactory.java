@@ -1,23 +1,38 @@
 package animal_games.rest.Dormitory.furniture;
 
 import java.util.HashMap;
+
 /**
- * @description Furniture factory class
- * @version 1.0
  * @author dabao
+ * @version 1.0
+ * @description Furniture factory class
  * @date 2020/11/24 23:34
  */
 public class FurnitureFactory {
     private HashMap<FurnitureKind, Furniture> furniturePool;         //Pool for storing furniture objects
     private static FurnitureFactory furnitureFactory = new FurnitureFactory();  //furniture factory
 
-    public FurnitureFactory(){furniturePool = new HashMap<>();}
+    /**
+     * @className: FurnitureFactory
+     * @description: create the new  FurnitureFactory
+     * @param: []
+     */
+    public FurnitureFactory() {
+        furniturePool = new HashMap<>();
+    }
 
-    public static FurnitureFactory getInstance(){
+    /**
+     * @methodName: getInstance
+     * @description: get the instance of the factory
+     * @param: []
+     * @return: animal_games.rest.Dormitory.furniture.FurnitureFactory
+     * @throws:
+     */
+    public static FurnitureFactory getInstance() {
         return furnitureFactory;
     }
 
-    public Furniture getFurnitureByKind(FurnitureKind kind){
+    public Furniture getFurnitureByKind(FurnitureKind kind) {
         /**
          * @description: Return some kind of furniture from the furniture pool.
          *
@@ -26,17 +41,16 @@ public class FurnitureFactory {
          * @return : animal_games.rest.dormitory.furniture.Furniture
          **/
         Furniture furniture = furniturePool.get(kind);
-        if(furniture == null){
+        if (furniture == null) {
             furniture = createFurniture(kind);
             furniturePool.put(kind, furniture);
-        }
-        else {
+        } else {
             System.out.println(kind.toString() + " object shared, reference count + 1 = " + (furniture.getReferenceCount() + 1));
         }
         return furniture.getReference();
     }
 
-    public Furniture createFurniture(FurnitureKind kind){
+    public Furniture createFurniture(FurnitureKind kind) {
         /**
          * @description: Create the furniture instance according to the kind provided.
          *
@@ -45,7 +59,7 @@ public class FurnitureFactory {
          * @return : animal_games.rest.dormitory.furniture.Furniture
          **/
         Furniture furniture = null;
-        switch (kind){
+        switch (kind) {
             case Bed:
                 furniture = new Bed();
                 break;

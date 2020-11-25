@@ -7,7 +7,11 @@ package animal_games.rest.Dormitory.furniture;
  * @date 2020/11/24 23:31
  */
 public class Chair extends  animal_games.rest.Dormitory.furniture.Furniture {
-
+    /**
+     * @className: Chair
+     * @description: create the Chair
+     * @param: []
+     */
     public Chair(){
         sharable = true;
         referenceCount = 0;
@@ -16,7 +20,7 @@ public class Chair extends  animal_games.rest.Dormitory.furniture.Furniture {
 
     @Override
     /**
-     * @description
+     * @description move the chair
      * @params []
      * @author dabao
      * @date 2020/11/24 23:31
