@@ -11,10 +11,6 @@ public class InterpreterContext {
     private Set<String> seniorUser = new HashSet<>();
     private Set<String> superiorUser = new HashSet<>();
 
-    private Set<String> juniorUsage = new HashSet<>();
-    private Set<String> seniorUsage = new HashSet<>();
-    private Set<String> superiorUsage = new HashSet<>();
-
     private Set<String> swimAnimal = new HashSet<>();
     private Set<String> runAnimal = new HashSet<>();
     private Set<String> flyAnimal = new HashSet<>();
@@ -27,34 +23,22 @@ public class InterpreterContext {
     Expression run;
     Expression swim;
 
+    Expression inspect;
+
     public InterpreterContext(){
 
     }
 
     public void addJuniorUser(String user){
         juniorUser.add(user);
-        seniorUser.add(user);
-        superiorUser.add(user);
-    }
-    public void addJuniorUsage(String usage){
-        juniorUsage.add(usage);
-        seniorUsage.add(usage);
-        superiorUsage.add(usage);
     }
     public void addSeniorUser(String user){
         seniorUser.add(user);
-        superiorUser.add(user);
-    }
-    public void addSeniorUsage(String usage){
-        seniorUsage.add(usage);
-        superiorUsage.add(usage);
     }
     public void addSuperiorUser(String user){
         superiorUser.add(user);
     }
-    public void addSuperiorUsage(String usage){
-        superiorUsage.add(usage);
-    }
+
     public void addSwimAnimal(String animal){
         swimAnimal.add(animal);
     }
@@ -65,23 +49,33 @@ public class InterpreterContext {
         flyAnimal.add(animal);
     }
 
-    public boolean usageInspection(String expr){
-        TerminalExpression juUser = new TerminalExpression(juniorUser);
-        TerminalExpression seUser = new TerminalExpression(seniorUser);
-        TerminalExpression suUser = new TerminalExpression(superiorUser);
-        TerminalExpression juUsage = new TerminalExpression(juniorUsage);
-        TerminalExpression seUsage = new TerminalExpression(seniorUsage);
-        TerminalExpression suUsage = new TerminalExpression(superiorUsage);
-        junior = new AndExpression(juUser, juUsage);
-        senior = new AndExpression(seUser, seUsage);
-        superior = new AndExpression(suUser, suUsage);
-        return junior.interpret(expr)||senior.interpret(expr)||superior.interpret(expr);
-
-    }
     public boolean actionInspection(String animal, String act){
         fly = new TerminalExpression(flyAnimal);
         swim = new TerminalExpression(swimAnimal);
         run = new TerminalExpression(runAnimal);
+        if("fly".equals(act)){
+            return fly.interpret(animal);
+        }
+        else if("swim".equals(act)){
+            return swim.interpret(animal);
+        }
+        else if("run".equals(act)){
+            return run.interpret(animal);
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean qualificationInspection(String animal, String act, String level){
+        fly = new TerminalExpression(flyAnimal);
+        swim = new TerminalExpression(swimAnimal);
+        run = new TerminalExpression(runAnimal);
+
+        junior = new TerminalExpression(juniorUser);
+        senior = new TerminalExpression(seniorUser);
+        superior = new TerminalExpression(superiorUser);
+
+        inspect = new AndExpression(fly, junior);
         if("fly".equals(act)){
             return fly.interpret(animal);
         }

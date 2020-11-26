@@ -4,16 +4,16 @@ package main.java.team.animal_games.Animal.Interpreter;
  * @author Raven
  */
 public class AndExpression implements Expression{
-    private Expression animals;
-    private Expression actions;
+    private Expression expr1;
+    private Expression expr2;
 
-    public AndExpression(Expression animals, Expression actions){
-        this.animals = animals;
-        this.actions = actions;
+    public AndExpression(Expression expr1, Expression expr2){
+        this.expr1 = expr1;
+        this.expr2 = expr2;
     }
 
     @Override
     public boolean interpret(String context) {
-        return animals.interpret(context) && actions.interpret(context);
+        return expr1.interpret(context) && expr2.interpret(context);
     }
 }
