@@ -10,27 +10,27 @@ public class StrategyTest {
         Map player1 = new HashMap<String, Integer>(10)
         {
             {
-                put("STR", 8);
-                put("INT", 2);
-                put("CON", 4);
-                put("AGI", 5);
-                put("MEN", 8);
-                put("VIT", 7);
-                put("LUK", 8);
-                put("WIS", 3);
+                put("STR", (int) (Math.random()*10));
+                put("INT", (int) (Math.random()*10));
+                put("CON", (int) (Math.random()*10));
+                put("AGI", (int) (Math.random()*10));
+                put("MEN", (int) (Math.random()*10));
+                put("VIT", (int) (Math.random()*10));
+                put("LUK", (int) (Math.random()*10));
+                put("WIS", (int) (Math.random()*10));
             }
         };
         Map player2 = new HashMap<String, Integer>(10)
         {
             {
-                put("STR", 2);
-                put("INT", 6);
-                put("CON", 8);
-                put("AGI", 8);
-                put("MEN", 8);
-                put("VIT", 9);
-                put("LUK", 8);
-                put("WIS", 8);
+                put("STR", (int) (Math.random()*10));
+                put("INT", (int) (Math.random()*10));
+                put("CON", (int) (Math.random()*10));
+                put("AGI", (int) (Math.random()*10));
+                put("MEN", (int) (Math.random()*10));
+                put("VIT", (int) (Math.random()*10));
+                put("LUK", (int) (Math.random()*10));
+                put("WIS", (int) (Math.random()*10));
             }
         };
         StrategyContext fly = new StrategyContext(new DoFly());
@@ -112,13 +112,16 @@ public class StrategyTest {
         if(weight1 > weight2){
             winner = "Player one";
         }
-        else{
+        else if(weight1 < weight2){
             winner = "Player two";
+        }
+        else{
+            winner = "It is a tie ! ";
         }
 
         System.out.println("\nThe winner of the game is ... ");
         System.out.println("\n" + winner + " ! ");
         System.out.println("\nTheir results : ");
-        System.out.println("\nPlayer one : " + weight1 + " Player two : " + weight2);
+        System.out.println("\nPlayer one : " + (int)weight1 + " Player two : " + (int)weight2);
     }
 }
