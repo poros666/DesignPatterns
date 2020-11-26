@@ -12,6 +12,7 @@ public class TeamDirector {
     }
     public BasketballTeam constructRedTeam()
     {
+        System.out.println("TeamDirector: constructRedTeam: create a redTeam for basketballTeam");
         this.teamBuilder = new RedTeamBuilder();
         //构建篮球队
         teamBuilder.setCenter(new Monkey("aa", "Center", "red"));
@@ -22,6 +23,7 @@ public class TeamDirector {
         return this.teamBuilder.getResult();
     }
     public BasketballTeam constructBlueTeam(){
+        System.out.println("TeamDirector: constructBlueTeam: create a blueTeam for basketballTeam");
         this.teamBuilder = new BlueTeamBuilder();
         //构建篮球队
         teamBuilder.setCenter(new Panda("AA","Center", "blue"));

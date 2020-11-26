@@ -9,16 +9,19 @@ public class Adapter extends Tiger implements FlyTiger{
 
     @Override
     public void move() {
+        System.out.println("Adapter: move: let FlyTiger could fly");
         System.out.println("现在这只老虎不仅可以奔跑，还可以飞行。");
     }
 
     @Override
     public void eat() {
+        System.out.println("Adapter: eat: let FlyTiger eat FlyTiger's food");
         System.out.println("现在这只老虎吃飞虎的食物。");
     }
 
     @Override
     public void sleep() {
+        System.out.println("Adapter: sleep: let FlyTiger rest in FlyTiger's room");
         System.out.println("现在这只老虎睡飞虎的宿舍。");
     }
 

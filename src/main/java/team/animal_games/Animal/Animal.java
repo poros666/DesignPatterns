@@ -11,6 +11,7 @@ public class Animal {
     * 力量STR 智力INT 体质CON 敏捷AGI 精神MEN 耐力VIT 幸运LUK 智慧WIS
      */
     private Map<String, Integer> attribute;
+
     private double worth = 1;
     private String profile = "这是一只动物";
     double getWorth(){
