@@ -1,8 +1,8 @@
 package main.java.team.animal_games.Animal.TransferObject;
 
 import main.java.team.animal_games.Animal.Animal;
+import main.java.team.animal_games.state.NullState;
 import main.java.team.animal_games.state.StateExcited;
-import main.java.team.animal_games.state.StateNormal;
 import main.java.team.animal_games.state.StateSick;
 import main.java.team.animal_games.state.StateStarve;
 
@@ -18,8 +18,8 @@ public class AnimalBO {
     public AnimalBO(){
         System.out.println("AnimalBO: AnimalBO(): create a database and add some data.");
         animals = new ArrayList<Animal>();
-        Animal animal1 = new Animal(new StateNormal(),"tiger");
-        Animal animal2 = new Animal(new StateNormal(),"lion");
+        Animal animal1 = new Animal(new NullState(),"tiger");
+        Animal animal2 = new Animal(new NullState(),"lion");
         animals.add(animal1);
         animals.add(animal2);
     }
@@ -55,7 +55,7 @@ public class AnimalBO {
         System.out.print(this.getAllAnimals().indexOf(an)+" Animal :Name: " +
                 an.getName() +
                 "  State : [ ");
-        if (StateNormal.class.equals(an.getState().getClass())) {
+        if (NullState.class.equals(an.getState().getClass())) {
             System.out.print("Normal ]");
         } else if (StateExcited.class.equals(an.getState().getClass())) {
             System.out.print("Excited ]");

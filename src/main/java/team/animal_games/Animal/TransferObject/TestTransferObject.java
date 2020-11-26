@@ -1,8 +1,8 @@
 package main.java.team.animal_games.Animal.TransferObject;
 
 import main.java.team.animal_games.Animal.Animal;
+import main.java.team.animal_games.state.NullState;
 import main.java.team.animal_games.state.StateExcited;
-import main.java.team.animal_games.state.StateNormal;
 import main.java.team.animal_games.state.StateSick;
 import main.java.team.animal_games.state.StateStarve;
 
@@ -36,7 +36,7 @@ public class TestTransferObject {
         int state = reader.nextInt();
         switch (state){
             case 1:
-                temp.setState(new StateNormal());
+                temp.setState(new NullState());
                 break;
             case 2:
                 temp.setState(new StateExcited());
