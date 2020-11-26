@@ -9,7 +9,7 @@ public class NoWood extends SkillDecorator{
     }
     @Override
     public double getWorth(){
-        return ani.getWorth() + 69;
+        return ani.getWorth() - 69;
     }
     @Override
     public String getDescription(){
