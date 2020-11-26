@@ -48,21 +48,33 @@ public class TemplateMethodTest {
         mycR.set_contestant(contR);
         System.out.println("==================Different subclasses of Competition==================");
         System.out.println("==================will call the same startCompetition() !==================");
-        System.out.println("Flying:");
-        mycF.startCompetition();
-        System.out.println("Running:");
-        mycR.startCompetition();
         System.out.println("==================will call the specific race() !==================");
-        System.out.println("Flying:");
-        mycF.race();
-        System.out.println("Running:");
-        mycR.race();
         System.out.println("==================will call the same prizeGiving() !==================");
-        System.out.println("Flying:");
-        mycF.prizeGiving();
-        System.out.println("Running:");
-        mycR.prizeGiving();
         System.out.println("==================Rerun may help find difference!==================");
+        System.out.println("====================================Flying:==================");
+        mycF.runCompetition();
+        System.out.println("====================================Running:==================");
+        mycR.runCompetition();
+        System.out.println("==================Rerun may help find difference!==================");
+
+//        上面是整体连续测试，如果看不懂，可以试试下面的分步测试，可能会看的清楚一点。
+//        System.out.println("==================Different subclasses of Competition==================");
+//        System.out.println("==================will call the same startCompetition() !==================");
+//        System.out.println("Flying:");
+//        mycF.startCompetition();
+//        System.out.println("Running:");
+//        mycR.startCompetition();
+//        System.out.println("==================will call the specific race() !==================");
+//        System.out.println("Flying:");
+//        mycF.race();
+//        System.out.println("Running:");
+//        mycR.race();
+//        System.out.println("==================will call the same prizeGiving() !==================");
+//        System.out.println("Flying:");
+//        mycF.prizeGiving();
+//        System.out.println("Running:");
+//        mycR.prizeGiving();
+//        System.out.println("==================Rerun may help find difference!==================");
 
     }
 }

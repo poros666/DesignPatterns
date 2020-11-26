@@ -51,6 +51,13 @@ public abstract class Competition {
     abstract public int[] getScore(ScoreRecorder scoreRecorder);//获取比赛结束后各队获得的积分(使用时请区别于 排名 )
 
     //模拟比赛过程的三个函数如下(此处使用了设计模式：Template Method)
+
+    public void runCompetition(){
+        startCompetition();
+        race();
+        prizeGiving();
+    }
+
     //startCompetition()用于模拟比赛开始的情况，属于父类实现的函数，没有实际用途
     public void startCompetition() {
         System.out.println("Competition::startCompetition()::\"competition started!\"");
