@@ -39,9 +39,7 @@ public class InterpreterContext {
         superiorUser.add(user);
     }
 
-    public void addSwimAnimal(String animal){
-        swimAnimal.add(animal);
-    }
+    public void addSwimAnimal(String animal){ swimAnimal.add(animal); }
     public void addRunAnimal(String animal){
         runAnimal.add(animal);
     }
@@ -75,15 +73,41 @@ public class InterpreterContext {
         senior = new TerminalExpression(seniorUser);
         superior = new TerminalExpression(superiorUser);
 
-        inspect = new AndExpression(fly, junior);
-        if("fly".equals(act)){
-            return fly.interpret(animal);
+        if("fly".equals(act)&&"junior".equals(level)){
+            inspect = new AndExpression(fly, junior);
+            return inspect.interpret(animal);
         }
-        else if("swim".equals(act)){
-            return swim.interpret(animal);
+        else if("swim".equals(act)&&"junior".equals(level)){
+            inspect = new AndExpression(swim, junior);
+            return inspect.interpret(animal);
         }
-        else if("run".equals(act)){
-            return run.interpret(animal);
+        else if("run".equals(act)&&"junior".equals(level)){
+            inspect = new AndExpression(run, junior);
+            return inspect.interpret(animal);
+        }
+        else if("fly".equals(act)&&"senior".equals(level)){
+            inspect = new AndExpression(fly, senior);
+            return inspect.interpret(animal);
+        }
+        else if("swim".equals(act)&&"senior".equals(level)){
+            inspect = new AndExpression(swim, senior);
+            return inspect.interpret(animal);
+        }
+        else if("run".equals(act)&&"senior".equals(level)){
+            inspect = new AndExpression(run, senior);
+            return inspect.interpret(animal);
+        }
+        else if("fly".equals(act)&&"superior".equals(level)){
+            inspect = new AndExpression(fly, superior);
+            return inspect.interpret(animal);
+        }
+        else if("swim".equals(act)&&"superior".equals(level)){
+            inspect = new AndExpression(swim, superior);
+            return inspect.interpret(animal);
+        }
+        else if("run".equals(act)&&"superior".equals(level)){
+            inspect = new AndExpression(run, superior);
+            return inspect.interpret(animal);
         }
         else{
             return false;

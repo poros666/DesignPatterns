@@ -1,4 +1,7 @@
-package main.java.team.animal_games.Animal.Strategy;
+package main.java.team.animal_games.test.DesignPatternTest;
+
+import main.java.team.animal_games.Animal.Strategy.DoFly;
+import main.java.team.animal_games.Animal.Strategy.StrategyContext;
 
 import java.util.*;
 
@@ -66,48 +69,40 @@ public class StrategyTest {
         System.out.println("\nChoose the race !");
 
         Scanner input = new Scanner(System.in);
-        int flag = 0;
+        int flag;
 
-        boolean stop_flag = false;
+        boolean stopFlag = false;
 
         do{
             System.out.println("\n1.Swim 2.Run 3.Fly");
 
             try{
                 flag = Integer.parseInt(input.nextLine());
-            }catch (ArrayIndexOutOfBoundsException e){
-                System.out.println("\nWrong input , please enter again");
-                continue;
-            }catch (InputMismatchException e2){
-                System.out.println("\nWrong input , please enter again");
-                continue;
-            }catch (NumberFormatException e3)
-            {
+            }catch (ArrayIndexOutOfBoundsException | InputMismatchException | NumberFormatException e){
                 System.out.println("\nWrong input , please enter again");
                 continue;
             }
             if(flag == 1){
                 weight1 = swim.doStrategy(player1);
                 weight2 = swim.doStrategy(player2);
-                stop_flag = true;
+                stopFlag = true;
             }
             else if(flag == 2){
                 weight1 = run.doStrategy(player1);
                 weight2 = run.doStrategy(player2);
-                stop_flag = true;
+                stopFlag = true;
             }
 
             else if(flag == 3){
                 weight1 = fly.doStrategy(player1);
                 weight2 = fly.doStrategy(player2);
-                stop_flag = true;
+                stopFlag = true;
             }
             else{
                 System.out.println("\nWrong input , please enter again");
-                continue;
             }
 
-        }while(!stop_flag);
+        }while(!stopFlag);
         String winner;
         if(weight1 > weight2){
             winner = "Player one";

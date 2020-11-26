@@ -1,5 +1,5 @@
 package main.java.team.animal_games.Animal.Decorator;
-
+import main.java.team.animal_games.Animal.Animal;
 /**
  * @author Raven
  */

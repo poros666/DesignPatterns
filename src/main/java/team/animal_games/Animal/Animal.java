@@ -13,12 +13,12 @@ public class Animal {
      */
     private Map<String, Integer> attribute;
 
-    private double worth = 1;
-    private String profile = "这是一只动物";
-    double getWorth(){
+    private double worth = 100;
+    private String profile = "这是一只动物运动员";
+    public double getWorth(){
         return this.worth;
     }
-    String getDescription(){
+    public String getDescription(){
         return this.profile;
     }
     public Animal(){
