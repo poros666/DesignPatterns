@@ -5,7 +5,7 @@ import java.util.List;
 public class AwardProcess implements Aggregate {
     private List<Award> awardList;
 
-    AwardProcess(List<Award> awardList) {
+    public AwardProcess(List<Award> awardList) {
         this.awardList = awardList;
     }
 

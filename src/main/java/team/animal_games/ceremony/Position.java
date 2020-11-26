@@ -1,4 +1,4 @@
-package main.java.team.animal_games.award;
+package main.java.team.animal_games.ceremony;
 
 public class Position {
     private int max;
@@ -8,7 +8,8 @@ public class Position {
     private final int normalNum = 50;
     public static int positionNum = 0;
 
-    Position(String n) {
+    public Position(String n) {
+        positionNum += 1;
         currentNum = 0;
         name = n;
         if (name == "stage") {

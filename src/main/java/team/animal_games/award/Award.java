@@ -1,5 +1,7 @@
 package main.java.team.animal_games.award;
 
+import main.java.team.animal_games.ceremony.Participant;
+
 public abstract class Award {
     protected String species;
     protected String level;

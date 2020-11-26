@@ -1,10 +1,10 @@
-class Athlete extends Participant
-{
-    public Athlete(Position p,String n)
-    {
-        super(p,n);
+package main.java.team.animal_games.ceremony;
+
+class Athlete extends Participant {
+    public Athlete(Position p, String n) {
+        super(p, n);
     }
-    
+
     @Override
     public void changePosition(Position p) {
         // TODO Auto-generated method stub
