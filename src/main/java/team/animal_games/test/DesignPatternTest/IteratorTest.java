@@ -9,7 +9,11 @@ import java.util.List;
 
 public class IteratorTest {
     public static void main(String[] args) throws Exception {
-        Position p1 = new Position("stage");
+        Position p1 = new Position("");//位置这里不重要，不再处理
+        System.out.println("-------------Iterator Pattern-------------");
+        /**
+         * 个人奖
+         */
         Participant participant1 = new Participant(p1, "cat1");
         Participant participant2 = new Participant(p1, "dog2");
         Participant participant3 = new Participant(p1, "tiger");
@@ -21,10 +25,16 @@ public class IteratorTest {
         Participant participant5 = new Participant(p1, "dog4");
         Participant participant6 = new Participant(p1, "dog5");
         Participant participant7 = new Participant(p1, "dog6");
+        /**
+         * 团体奖
+         */
         Award award5 = new GroupAward("足球比赛", "银牌");
         award5.add(participant5);
         award5.add(participant6);
         award5.add(participant7);
+        /**
+         * 创建领奖单
+         */
         List<Award> awardList = new ArrayList<>();
         awardList.add(award1);
         awardList.add(award2);
@@ -32,6 +42,9 @@ public class IteratorTest {
         awardList.add(award4);
         awardList.add(award5);
         AwardProcess awardProcess = new AwardProcess(awardList);
+        /**
+         * 通过设计模式依次领奖
+         */
         AwardIterator awardIterator = awardProcess.getIterator();
         while (awardIterator.hasNext()) {
             awardIterator.show();

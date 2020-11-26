@@ -8,6 +8,9 @@ public class AwardIterator implements Iterator {
         awardList = awardProcess;
     }
 
+    /**
+     * @return if it has new element
+     */
     @Override
     public boolean hasNext() {
         if (index < awardList.getLength()) {
@@ -15,6 +18,7 @@ public class AwardIterator implements Iterator {
         }
         return false;
     }
+
 
     @Override
     public void next() {
@@ -28,12 +32,20 @@ public class AwardIterator implements Iterator {
         index = 0;
     }
 
+    /**
+     *
+     * @param index
+     * @return get the current element
+     */
     @Override
     public Award getCurrent(int index) {
         return awardList.getElement(index);
     }
 
-    public void show(){
+    /**
+     * show : receive the award
+     */
+    public void show() {
         System.out.print("Announce award: ");
         System.out.println(awardList.getElement(index));
         System.out.println("Please come to the stage to receive the prize!");

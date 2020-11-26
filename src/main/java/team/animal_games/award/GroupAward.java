@@ -32,6 +32,17 @@ public class GroupAward extends Award {
         return true;
     }
 
+    /**
+     *
+     * @param award add the award to the group award
+     * @return true or throw a exception
+     */
+    @Override
+    public boolean add(Award award) {
+        awardList.add(award);
+        return true;
+    }
+
     @Override
     public String toString() {
         String str = "GroupAward: " + getSpecies() + " " + getLevel();

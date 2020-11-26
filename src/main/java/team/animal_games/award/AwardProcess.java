@@ -17,6 +17,10 @@ public class AwardProcess implements Aggregate {
         return awardList.get(index);
     }
 
+    /**
+     *
+     * @return get the iterator
+     */
     @Override
     public AwardIterator getIterator() {
         return new AwardIterator(this);

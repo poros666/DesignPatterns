@@ -13,7 +13,7 @@ public class MatchBusinessDelegate {
     }
 
     /**
-     * watch Match
+     * start match service or watch Match
      */
     public void startMatchService() {
         businessService = lookUpService.getBusinessService(serviceType);

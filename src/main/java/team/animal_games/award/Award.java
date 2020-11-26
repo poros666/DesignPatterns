@@ -18,6 +18,10 @@ public abstract class Award {
         throw new Exception("Add the award in Individual award!");
     }
 
+    public boolean add(Award award)throws Exception {
+        throw new Exception("Add the award in Individual award!");
+    }
+
     /**
      * @param species: award type
      * @param level: award level
