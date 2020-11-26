@@ -1,14 +1,24 @@
 package main.java.team.animal_games.Animal.animals;
 
 import main.java.team.animal_games.Animal.Animal;
+import main.java.team.animal_games.state.State;
 
 public class Panda extends Animal {
     private final String position;
     private final String team;
+    public Panda(String p,String t){
+        this.position=p;
+        this.team=t;
+    }
     public Panda(String n, String p, String t){
-        this.setName(n);
+        super(n);
         this.position = p;
         this.team = t;
+    }
+    public Panda( State s, String n,String p, String t){
+        super(s,n);
+        this.position=p;
+        this.team=t;
     }
 
     public String getPosition() {

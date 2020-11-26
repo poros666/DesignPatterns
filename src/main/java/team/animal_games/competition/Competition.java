@@ -1,9 +1,9 @@
 package main.java.team.animal_games.competition;
 
+import main.java.team.animal_games.Animal.Animal;
 import main.java.team.animal_games.rule.Rules;
 import main.java.team.animal_games.score.ScoreRecorder;
 import main.java.team.animal_games.situation.Situation;
-import main.java.team.animal_games.state.Animal;
 
 import java.util.Map;
 
@@ -113,7 +113,7 @@ public abstract class Competition {
             int animalPower = 0;
             System.out.println("contestant--team" + index + ":");
             for (Animal ani : team) {
-                System.out.printf("[" + ani.name + "]:");
+                System.out.printf("[" + ani.getName() + "]:");
                 ani.showState();
                 animalPower += ani.getState().getStateToInt();
             }

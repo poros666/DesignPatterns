@@ -1,12 +1,11 @@
 package main.java.team.animal_games.test.DesignPatternTest;
 
+import main.java.team.animal_games.Animal.Animal;
 import main.java.team.animal_games.competition.Competition;
 import main.java.team.animal_games.competition.Flying;
 import main.java.team.animal_games.competition.Running;
 import main.java.team.animal_games.score.GameScoreRecorder;
 import main.java.team.animal_games.score.ScoreResult;
-import main.java.team.animal_games.state.Animal;
-import main.java.team.animal_games.state.NullState;
 import main.java.team.animal_games.state.StateExcited;
 import main.java.team.animal_games.state.StateSick;
 
@@ -23,11 +22,11 @@ public class VisitorTest {
                 name = name.concat(String.valueOf(i));
                 name = name.concat(String.valueOf(j));
                 if (Math.random() < 0.3) {
-                    contF[i][j] = new Animal(name, new StateExcited());
+                    contF[i][j] = new Animal(new StateExcited(),name);
                 } else if (Math.random() < 0.6) {
                     contF[i][j] = new Animal(name);
                 } else {
-                    contF[i][j] = new Animal(name, new StateSick());
+                    contF[i][j] = new Animal(new StateSick(),name);
                 }
             }
         }
@@ -38,11 +37,11 @@ public class VisitorTest {
                 name = name.concat(String.valueOf(i));
                 name = name.concat(String.valueOf(j));
                 if (Math.random() < 0.3) {
-                    contR[i][j] = new Animal(name, new StateExcited());
+                    contR[i][j] = new Animal(new StateExcited(),name);
                 } else if (Math.random() < 0.6) {
                     contR[i][j] = new Animal(name);
                 } else {
-                    contR[i][j] = new Animal(name, new StateSick());
+                    contR[i][j] = new Animal(new StateSick(),name);
                 }
             }
         }
@@ -74,7 +73,7 @@ public class VisitorTest {
         System.out.println("ScoreResult::accept(ScoreRecorder)::遍历容器中所有比赛,得出各队当天总积分");
         int[] testArray=result.accept(new GameScoreRecorder());
         for(int i=0;i<testArray.length;i++){
-            System.out.format("第%d队获得积分%d\n",i+1,testArray[i]);
+            System.out.format("第%d队获得积分%d\n",i,testArray[i]);
         }
     }
     public static void main(String[] args){

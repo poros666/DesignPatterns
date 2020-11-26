@@ -1,4 +1,5 @@
 package main.java.team.animal_games.Animal;
+import main.java.team.animal_games.state.NullState;
 import main.java.team.animal_games.state.State;
 
 import java.util.*;
@@ -35,6 +36,22 @@ public class Animal {
     };
     public Animal(State s, String n){
         this.state = s;
+        this.name = n;
+        attribute=new HashMap<String, Integer>();
+        Random r=new Random();
+
+        attribute.put("STR",(Integer)r.nextInt(10));
+        attribute.put("INT",(Integer)r.nextInt(10));
+        attribute.put("CON",(Integer)r.nextInt(10));
+        attribute.put("AGI",(Integer)r.nextInt(10));
+        attribute.put("MEN",(Integer)r.nextInt(10));
+        attribute.put("VIT",(Integer)r.nextInt(10));
+        attribute.put("LUK",(Integer)r.nextInt(10));
+        attribute.put("WIS",(Integer)r.nextInt(10));
+    }
+
+    public Animal(String n){
+        this.state = new NullState();
         this.name = n;
         attribute=new HashMap<String, Integer>();
         Random r=new Random();
