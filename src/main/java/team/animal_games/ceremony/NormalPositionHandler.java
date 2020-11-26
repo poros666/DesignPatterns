@@ -1,12 +1,14 @@
-package main.java.team.animal_games.ceremony;
 
-class NormalPositionHandler extends PositionHandler {
-    public NormalPositionHandler() {
-        super(new Position("normal" + String.valueOf(Position.positionNum)));
-        Position.positionNum += 1;
+public class NormalPositionHandler extends PositionHandler
+{
+    public NormalPositionHandler()
+    {
+        super(new Position("normal"+String.valueOf(Position.positionNum)));
+        Position.positionNum+=1;
     }
 
-    public NormalPositionHandler(Position p) {
+    public NormalPositionHandler(Position p)
+    {
         super(p);
     }
 

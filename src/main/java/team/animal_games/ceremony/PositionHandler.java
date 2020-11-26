@@ -1,18 +1,22 @@
-package main.java.team.animal_games.ceremony;
 
-class PositionHandler extends BaseHandler {
+public class PositionHandler extends BaseHandler
+{
     protected Position place;
 
-    public PositionHandler(Position p) {
-        place = p;
+    public PositionHandler(Position p)
+    {
+        place=p;
     }
 
     @Override
-    public void handle(Participant p) {
-        if (place.can_room(p.getSeatNum())) {
-            place.in(p.getSeatNum());
+    public void handle(Participant p)
+    {
+        if(place.can_room(p.getSeatNum()))
+        {
             p.changePosition(place);
-        } else {
+        }
+        else
+        {
             super.handle(p);
         }
     }

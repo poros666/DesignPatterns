@@ -1,5 +1,5 @@
-package main.java.team.animal_games.ceremony;
 
-interface Command {
+interface Command
+{
     void execute();
 }

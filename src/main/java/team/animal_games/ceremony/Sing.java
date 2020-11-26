@@ -1,8 +1,9 @@
-package main.java.team.animal_games.ceremony;
 
-class Sing extends BaseCommand {
-    public Sing(String con) {
-        super(con);
+public class Sing extends BaseCommand
+{
+    public Sing(String con)
+    {
+        super(con,false);
     }
 
     @Override
