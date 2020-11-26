@@ -2,7 +2,7 @@
 package main.java.team.animal_games.state;
 
 //无特殊状态，用作空对象
-public class NullState extends State {
+public class NullState implements State {
     @Override
     public void showState() {
         System.out.println("This animal doesn't have a abnormal state.");

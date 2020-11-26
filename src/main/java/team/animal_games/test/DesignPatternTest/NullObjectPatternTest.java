@@ -1,7 +1,6 @@
 package main.java.team.animal_games.test.DesignPatternTest;
 
 import main.java.team.animal_games.state.Animal;
-import main.java.team.animal_games.state.State;
 import main.java.team.animal_games.state.StateSick;
 
 public class NullObjectPatternTest {
@@ -15,7 +14,7 @@ public class NullObjectPatternTest {
 
         System.out.println("Animal::setState(stateSick)::更改当前狗的状态为生病状态");
         System.out.println("StateSick:StateSick()::创建一个生病状态");
-        State stateSick=new StateSick();
+        StateSick stateSick=new StateSick();
         dog.setState(stateSick);
         System.out.println("Animal::showState()::调用StateSick::showState()::显示当前狗的状态(生病)");
         dog.showState();

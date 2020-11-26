@@ -2,7 +2,9 @@
 package main.java.team.animal_games.state;
 
 
-public class StateStarve extends State {
+public class StateStarve implements State {
+    protected String state;
+
     public StateStarve() {
         state = "starve";
     }

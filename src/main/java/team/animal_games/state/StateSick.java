@@ -2,7 +2,8 @@
 package main.java.team.animal_games.state;
 
 
-public class StateSick extends State {
+public class StateSick implements State {
+    protected String state;
     public StateSick() {
         state = "sick";
     }
