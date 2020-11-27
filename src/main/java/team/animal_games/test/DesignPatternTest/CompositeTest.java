@@ -5,7 +5,6 @@ import main.java.team.animal_games.award.Award;
 import main.java.team.animal_games.award.GroupAward;
 import main.java.team.animal_games.award.IndividualAward;
 import main.java.team.animal_games.ceremony.Participant;
-import main.java.team.animal_games.ceremony.Position;
 
 public class CompositeTest {
     public static void main(String[] args) throws Exception {

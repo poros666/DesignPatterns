@@ -2,7 +2,6 @@ package main.java.team.animal_games.test.DesignPatternTest;
 
 import main.java.team.animal_games.award.*;
 import main.java.team.animal_games.ceremony.Participant;
-import main.java.team.animal_games.ceremony.Position;
 
 import java.util.ArrayList;
 import java.util.List;
