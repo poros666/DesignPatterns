@@ -9,22 +9,21 @@ import java.util.List;
 
 public class IteratorTest {
     public static void main(String[] args) throws Exception {
-        Position p1 = new Position("");//位置这里不重要，不再处理
         System.out.println("-------------Iterator Pattern-------------");
         /**
          * 个人奖
          */
-        Participant participant1 = new Participant(p1, "cat1");
-        Participant participant2 = new Participant(p1, "dog2");
-        Participant participant3 = new Participant(p1, "tiger");
-        Participant participant4 = new Participant(p1, "cat2");
+        Participant participant1 = new Participant("cat1");
+        Participant participant2 = new Participant("dog2");
+        Participant participant3 = new Participant("tiger");
+        Participant participant4 = new Participant("cat2");
         Award award1 = new IndividualAward("乒乓球比赛", "金牌", participant1);
         Award award2 = new IndividualAward("羽毛球比赛", "铜牌", participant2);
         Award award3 = new IndividualAward("拳击比赛", "金牌", participant3);
         Award award4 = new IndividualAward("游泳比赛", "银牌", participant4);
-        Participant participant5 = new Participant(p1, "dog4");
-        Participant participant6 = new Participant(p1, "dog5");
-        Participant participant7 = new Participant(p1, "dog6");
+        Participant participant5 = new Participant("dog4");
+        Participant participant6 = new Participant("dog5");
+        Participant participant7 = new Participant("dog6");
         /**
          * 团体奖
          */

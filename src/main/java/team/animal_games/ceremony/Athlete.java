@@ -1,3 +1,4 @@
+package main.java.team.animal_games.ceremony;
 
 public class Athlete extends Participant
 {

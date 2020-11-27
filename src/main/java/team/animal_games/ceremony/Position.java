@@ -1,5 +1,6 @@
+package main.java.team.animal_games.ceremony;
 
-public class Position 
+public class Position
 {
     private int max;
     private int currentNum;
