@@ -1,6 +1,8 @@
 package main.java.team.animal_games.test.DesignPatternTest;
 
 import main.java.team.animal_games.Animal.Strategy.DoFly;
+import main.java.team.animal_games.Animal.Strategy.DoRun;
+import main.java.team.animal_games.Animal.Strategy.DoSwim;
 import main.java.team.animal_games.Animal.Strategy.StrategyContext;
 
 import java.util.*;
@@ -37,8 +39,8 @@ public class StrategyTest {
             }
         };
         StrategyContext fly = new StrategyContext(new DoFly());
-        StrategyContext swim = new StrategyContext(new DoFly());
-        StrategyContext run = new StrategyContext(new DoFly());
+        StrategyContext swim = new StrategyContext(new DoSwim());
+        StrategyContext run = new StrategyContext(new DoRun());
         double weight1 = 0;
         double weight2 = 0;
 

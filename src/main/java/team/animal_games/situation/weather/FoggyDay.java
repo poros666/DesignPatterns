@@ -9,12 +9,14 @@ import java.util.Map;
  * @Date 2020/11/24 23:13
  **/
 public class FoggyDay extends Weather {
+    //constructor
     public FoggyDay() {
         temperature = (int) (13 + Math.random() * 15);
         visibility = (int) (-2 + Math.random());
         System.out.println("FoggyDay::FoggyDay() is called!");
     }
 
+    //获得天气状况
     public Map<String, Integer> getWeather() {
         temperature = (int) (13 + Math.random() * 15);
         visibility = (int) (-2 + Math.random());

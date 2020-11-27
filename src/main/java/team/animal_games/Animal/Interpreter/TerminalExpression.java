@@ -5,10 +5,15 @@ import java.util.Set;
 
 /**
  * @author Raven
+ * @Description Main interpreter for this method.
  */
 public class TerminalExpression implements Expression{
     private Set<String> set = new HashSet<>();
 
+    /**
+     * Construct interpreter.
+     * @param data Data set to be added.
+     */
     public TerminalExpression(Set<String> data){
         this.set.addAll(data);
     }

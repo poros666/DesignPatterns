@@ -1,4 +1,8 @@
-package main.java.team.animal_games.Animal.AbastractFactory;
+package main.java.team.animal_games.test.DesignPatternTest;
+
+import main.java.team.animal_games.Animal.AbastractFactory.AbstractFactory;
+import main.java.team.animal_games.Animal.AbastractFactory.LiftingFactory;
+import main.java.team.animal_games.Animal.AbastractFactory.RacingFactory;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -11,9 +15,9 @@ public class TestAbsFactory {
 
     public static void TestSpecies(){
         System.out.println("@@ 工厂当前生产的产品是: ");
-        System.out.println(abstractFactory.SeaAnimals_species);
-        System.out.println(abstractFactory.LandAnimals_species);
-        System.out.println(abstractFactory.SkyAnimals_species+'\n');
+        System.out.println(abstractFactory.getSeaAnimals_species());
+        System.out.println(abstractFactory.getLandAnimals_species());
+        System.out.println(abstractFactory.getSkyAnimals_species() +'\n');
     }
     public static void TestProduct(FactoryKind op){
         switch (op){

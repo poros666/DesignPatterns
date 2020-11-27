@@ -10,17 +10,18 @@ import main.java.team.animal_games.score.ScoreRecorder;
  **/
 public class WeightLifting extends Competition {
 
-    //protected Barbell _barbells;
-
+    //constructor
     public WeightLifting() {
         //_barbells = new Barbells;
         System.out.println("WeightLifting::WeightLifting()::\" create a weightlifting game!\"");
     }
 
+    //设置杠铃重量
     public void setBarbells() {
         System.out.println("WeightLifting::setBarbells()::\"set barbells to XXX KG\"");
     }
 
+    //举重比赛特殊race()
     @Override
     public int[] race() {
         System.out.println("WeightLifting::race()::");
@@ -31,6 +32,7 @@ public class WeightLifting extends Competition {
         return ans;
     }
 
+    //举重比赛特殊getScore()
     @Override
     public int[] getScore(ScoreRecorder scoreRecorder) {
         return scoreRecorder.recordScore(this);

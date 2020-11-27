@@ -21,6 +21,10 @@ public class Animal {
     public String getDescription(){
         return this.profile;
     }
+
+    /**
+     * @description: 无参构造函数，初始化动物的属性
+     */
     public Animal(){
         attribute=new HashMap<String, Integer>();
         Random r=new Random();
@@ -34,6 +38,12 @@ public class Animal {
         attribute.put("LUK",(Integer)r.nextInt(10));
         attribute.put("WIS",(Integer)r.nextInt(10));
     };
+
+    /**
+     * @description: 构造函数，初始化状态、姓名和属性
+     * @param s 状态
+     * @param n 姓名
+     */
     public Animal(State s, String n){
         this.state = s;
         this.name = n;
@@ -50,6 +60,10 @@ public class Animal {
         attribute.put("WIS",(Integer)r.nextInt(10));
     }
 
+    /**
+     * @description: 初始化姓名，赋予初始状态
+     * @param n 姓名
+     */
     public Animal(String n){
         this.state = new NullState();
         this.name = n;

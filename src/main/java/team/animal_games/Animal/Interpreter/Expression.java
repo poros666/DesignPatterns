@@ -5,9 +5,9 @@ package main.java.team.animal_games.Animal.Interpreter;
  */
 public interface Expression {
     /**
-     * Returns judgement for the expression
+     * Returns judgement for the expression.
      * @param context
-     * @return
+     * @return results of the expression.
      */
-    public boolean interpret(String context);
+    boolean interpret(String context);
 }

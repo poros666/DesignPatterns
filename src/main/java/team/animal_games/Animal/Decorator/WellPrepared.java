@@ -3,6 +3,7 @@ import main.java.team.animal_games.Animal.Animal;
 
 /**
  * @author Raven
+ * @Description this class is decorator for skill No wood.
  */
 public class WellPrepared extends SkillDecorator{
     public WellPrepared(Animal ani) {

@@ -12,15 +12,17 @@ import java.util.Map;
 public abstract class TimePeriod {
     //此处使用了设计模式：Strategy Pattern
     //天气和时间都是策略类，根据不同的子类，将会执行不同的getWeather，getTime
-    protected int temperatureAffect;
-    protected int visibilityAffect;
+    protected int temperatureAffect;//温度影响
+    protected int visibilityAffect;//能见度影响
 
+    //constructor
     public TimePeriod() {
         temperatureAffect = 0;
         visibilityAffect = 0;
         System.out.println("TimePeriod::TimePeriod() is called!");
     }
 
+    //获得时间状况
     public Map<String, Integer> getTime() {
         Map<String, Integer> data = new HashMap<>();
         data.put("temperatureAffect", temperatureAffect);

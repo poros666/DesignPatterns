@@ -7,23 +7,27 @@ import java.util.List;
 
 
 public class ScoreResult {
-    private List<Competition> teamScore;//存放比赛
-    private int[] result;//存放各队伍得分总和
+    private List<Competition> teamScore;//restore the rank after a competition
+    private int[] result;//restore the points every team gets
 
+    /*construct the ScoreResult*/
     public ScoreResult() {
         teamScore = new LinkedList<>();
         result = new int[3];
     }
 
+    /*add the competition*/
     public void add(Competition competition) {
         this.teamScore.add(competition);
-    }//添加比赛
+    }
 
+    /*remove the competition*/
     public void remove(Competition competition) {
         this.teamScore.remove(competition);
-    }//移除比赛
+    }
 
-    public int[] accept(ScoreRecorder scoreRecorder) {//对所有比赛统计各队伍获得积分
+    /*accept the competition and count the sum points per day*/
+    public int[] accept(ScoreRecorder scoreRecorder) {
         for(Competition comp:teamScore){
             int[] score=comp.getScore(scoreRecorder);
             for(int i=0;i<3;i++){

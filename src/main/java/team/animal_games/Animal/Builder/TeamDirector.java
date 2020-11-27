@@ -8,8 +8,12 @@ public class TeamDirector {
     private TeamBuilder teamBuilder;
 
     public TeamDirector(){
-
     }
+
+    /**
+     * @description: 初始化TeamDirector中的Builder变量，依照一定步骤构造红队篮球队并返回
+     * @return 返回函数所构建的红队篮球队的实体
+     */
     public BasketballTeam constructRedTeam()
     {
         System.out.println("TeamDirector: constructRedTeam: create a redTeam for basketballTeam");
@@ -22,6 +26,10 @@ public class TeamDirector {
         teamBuilder.setSG(new Monkey("ee", "SG", "red"));
         return this.teamBuilder.getResult();
     }
+    /**
+     * @description: 初始化TeamDirector中的Builder变量，依照一定步骤构造蓝队篮球队并返回
+     * @return 返回函数所构建的蓝队篮球队的实体
+     */
     public BasketballTeam constructBlueTeam(){
         System.out.println("TeamDirector: constructBlueTeam: create a blueTeam for basketballTeam");
         this.teamBuilder = new BlueTeamBuilder();

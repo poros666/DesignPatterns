@@ -11,5 +11,5 @@ public interface ActionStrategy {
      * @param statistics represent animal's character attributes.
      * @return animal's weight in this context.
      */
-    public double doAction(Map<String, Integer> statistics);
+    double doAction(Map<String, Integer> statistics);
 }
