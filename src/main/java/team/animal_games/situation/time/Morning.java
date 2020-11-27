@@ -9,12 +9,14 @@ import java.util.Map;
  * @Date 2020/11/24 23:12
  **/
 public class Morning extends TimePeriod {
+    //constructor
     public Morning() {
         temperatureAffect = (int) (-1 + Math.random() * 3);
         visibilityAffect = 1;
         System.out.println("Morning::Morning is called!");
     }
 
+    //获得时间状况
     public Map<String, Integer> getTime() {
         temperatureAffect = (int) (-1 + Math.random() * 3);
         visibilityAffect = 1;

@@ -10,13 +10,12 @@ import main.java.team.animal_games.score.ScoreRecorder;
  **/
 public class BasketballGame extends Competition {
 
-    //protected BasketballKit basketballKit;
-
+    //constructor
     public BasketballGame() {
-        //_basketballKit = new BasketballKit;
         System.out.println("BasketballGame::BasketballGame()::\" create a basketball game!\"");
     }
 
+    //篮球特殊race()
     @Override
     public int[] race() {
         System.out.println("BasketballGame::race()::");
@@ -27,6 +26,7 @@ public class BasketballGame extends Competition {
         return ans;
     }
 
+    //篮球特殊getScore()
     @Override
     public int[] getScore(ScoreRecorder scoreRecorder) {
         return scoreRecorder.recordScore(this);

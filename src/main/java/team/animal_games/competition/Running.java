@@ -10,8 +10,9 @@ import main.java.team.animal_games.score.ScoreRecorder;
  **/
 public class Running extends Competition {
 
-    protected int _distance;
+    protected int _distance;//比赛距离
 
+    //constructor
     public Running() {
         if (Math.random() > 0.5) {
             _distance = 100;
@@ -21,7 +22,7 @@ public class Running extends Competition {
         System.out.println("Running::Running()::\"create a " + _distance + " meters running game!\"");
     }
 
-
+    //跑步比赛特殊race()
     @Override
     public int[] race() {
         System.out.println("Running::race()::");
@@ -32,6 +33,7 @@ public class Running extends Competition {
         return ans;
     }
 
+    //跑步比赛特殊getScore()
     @Override
     public int[] getScore(ScoreRecorder scoreRecorder) {
         return scoreRecorder.recordScore(this);
