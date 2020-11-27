@@ -1,5 +1,6 @@
 package main.java.team.animal_games.test;
 
+
 import main.java.team.animal_games.test.DesignPatternTest.*;
 
 import java.util.Scanner;
@@ -12,7 +13,7 @@ import java.util.Scanner;
  **/
 public class TestAll {
     public static void main(String[] args) throws Exception {
-        Scanner in1=new Scanner(System.in);
+        Scanner in1 = new Scanner(System.in);
         int num = -1;
         do {
             System.out.println("===============================ALL DP===============================");
@@ -51,37 +52,37 @@ public class TestAll {
             System.out.println("=                      33 Business Delegate Pattern                =");
             System.out.println("=                       0 EXIT TEST                                =");
             System.out.println("=========================Chose you action!==========================");
-            if(in1.hasNextInt()){
+            if (in1.hasNextInt()) {
                 num = in1.nextInt();
             }
-            switch(num){
-                case 0 :
+            switch (num) {
+                case 0:
                     break;
-                case 1 :
+                case 1:
                     TemplateMethodTest.main(new String[]{});
                     break;
-                case 2 :
+                case 2:
                     FacadeTest.main(new String[]{});
                     break;
-                case 6 :
+                case 6:
                     PrototypeTest.main(new String[]{});
                     break;
-                case 7 :
+                case 7:
                     FlyweightTest.main(new String[]{});
                     break;
-                case 8 :
+                case 8:
                     MediatorTest.main(new String[]{});
                     break;
-                case 9 :
+                case 9:
                     VersionNumberTest.main(new String[]{});
                     break;
-                case 10 :
+                case 10:
                     TestAbsFactory.main(new String[]{});
                     break;
-                case 11 :
+                case 11:
                     TestBuilder.main(new String[]{});
                     break;
-                case 12 :
+                case 12:
                     TestAdapter.main(new String[]{});
                     break;
                 case 13:
@@ -93,17 +94,19 @@ public class TestAll {
                 case 15:
                     NullObjectTest.main(new String[]{});
                     break;
-                case 26 :
+                case 26:
                     TestTransferObject.main(new String[]{});
                     break;
-                default :
+                case 31:
+                    CompositeTest.main(new String[]{});
+                case 32:
+                    IteratorTest.main(new String[]{});
+                case 33:
+                    BusinessDelegatePatternTest.main(new String[]{});
+                default:
                     break;
             }
-        }while (num!=0);
-
-
-
-
+        } while (num != 0);
 
 
     }
