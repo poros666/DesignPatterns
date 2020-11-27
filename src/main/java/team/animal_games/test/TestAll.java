@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @Date 2020/11/27 20:24
  **/
 public class TestAll {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner in1=new Scanner(System.in);
         int num = -1;
         do {
@@ -62,6 +62,18 @@ public class TestAll {
                     break;
                 case 2 :
                     FacadeTest.main(new String[]{});
+                    break;
+                case 6 :
+                    PrototypeTest.main(new String[]{});
+                    break;
+                case 7 :
+                    FlyweightTest.main(new String[]{});
+                    break;
+                case 8 :
+                    MediatorTest.main(new String[]{});
+                    break;
+                case 9 :
+                    VersionNumberTest.main(new String[]{});
                     break;
                 case 10 :
                     TestAbsFactory.main(new String[]{});
