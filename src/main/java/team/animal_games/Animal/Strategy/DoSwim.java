@@ -3,7 +3,9 @@ package main.java.team.animal_games.Animal.Strategy;
 import java.util.Map;
 
 /**
+ * @ClassName DoSwim
  * @author Raven
+ * @Description This class provides a strategy method for swimming action.
  */
 public class DoSwim implements ActionStrategy {
     @Override

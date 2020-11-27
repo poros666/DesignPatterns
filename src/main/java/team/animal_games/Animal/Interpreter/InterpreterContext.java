@@ -5,6 +5,7 @@ import java.util.Set;
 
 /**
  * @author Raven
+ * @Description context for this method.
  */
 public class InterpreterContext {
     private Set<String> juniorUser = new HashSet<>();
@@ -47,23 +48,13 @@ public class InterpreterContext {
         flyAnimal.add(animal);
     }
 
-    public boolean actionInspection(String animal, String act){
-        fly = new TerminalExpression(flyAnimal);
-        swim = new TerminalExpression(swimAnimal);
-        run = new TerminalExpression(runAnimal);
-        if("fly".equals(act)){
-            return fly.interpret(animal);
-        }
-        else if("swim".equals(act)){
-            return swim.interpret(animal);
-        }
-        else if("run".equals(act)){
-            return run.interpret(animal);
-        }
-        else{
-            return false;
-        }
-    }
+    /**
+     * Main function to inspect qualification of the animal.
+     * @param animal
+     * @param act
+     * @param level
+     * @return qualification true or false.
+     */
     public boolean qualificationInspection(String animal, String act, String level){
         fly = new TerminalExpression(flyAnimal);
         swim = new TerminalExpression(swimAnimal);

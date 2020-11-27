@@ -5,6 +5,11 @@ import main.java.team.animal_games.Animal.Animal;
  */
 public abstract class SkillDecorator extends Animal {
     protected Animal ani;
+
+    /**
+     * Construct decoration instance.
+     * @param ani
+     */
     public SkillDecorator(Animal ani){
         this.ani = ani;
     }

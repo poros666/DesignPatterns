@@ -2,6 +2,7 @@ package main.java.team.animal_games.Animal.Decorator;
 import main.java.team.animal_games.Animal.Animal;
 /**
  * @author Raven
+ * @Description this class is decorator for skill No wood.
  */
 public class NoWood extends SkillDecorator{
     public NoWood(Animal ani) {

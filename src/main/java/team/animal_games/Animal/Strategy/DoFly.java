@@ -3,7 +3,9 @@ package main.java.team.animal_games.Animal.Strategy;
 import java.util.Map;
 
 /**
+ * @ClassName DoFly
  * @author Raven
+ * @Description This class provides a strategy method for flying action.
  */
 public class DoFly implements ActionStrategy {
     @Override
