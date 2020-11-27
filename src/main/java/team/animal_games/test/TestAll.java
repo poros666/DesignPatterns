@@ -84,6 +84,15 @@ public class TestAll {
                 case 12 :
                     TestAdapter.main(new String[]{});
                     break;
+                case 13:
+                    StateTest.main(new String[]{});
+                    break;
+                case 14:
+                    VisitorTest.main(new String[]{});
+                    break;
+                case 15:
+                    NullObjectTest.main(new String[]{});
+                    break;
                 case 26 :
                     TestTransferObject.main(new String[]{});
                     break;
