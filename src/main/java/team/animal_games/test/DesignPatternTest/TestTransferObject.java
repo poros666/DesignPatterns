@@ -1,12 +1,12 @@
-package main.java.team.animal_games.Animal.TransferObject;
+package main.java.team.animal_games.test.DesignPatternTest;
 
 import main.java.team.animal_games.Animal.Animal;
+import main.java.team.animal_games.Animal.TransferObject.AnimalBO;
 import main.java.team.animal_games.state.NullState;
 import main.java.team.animal_games.state.StateExcited;
 import main.java.team.animal_games.state.StateSick;
 import main.java.team.animal_games.state.StateStarve;
 
-import java.util.Map;
 import java.util.Scanner;
 
 public class TestTransferObject {
@@ -55,7 +55,7 @@ public class TestTransferObject {
         System.out.println("-----------------now let get animal-----------------");
         System.out.println("---------------input the name of Animal-------------");
         String na = reader.next();
-        Animal animal = animalBO.getAniaml(na);
+        Animal animal = animalBO.getAnimal(na);
         animalBO.printAnimal(animal);
 
         System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");

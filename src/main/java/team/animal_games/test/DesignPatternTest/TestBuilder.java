@@ -1,4 +1,7 @@
-package main.java.team.animal_games.Animal.Builder;
+package main.java.team.animal_games.test.DesignPatternTest;
+
+import main.java.team.animal_games.Animal.Builder.BasketballTeam;
+import main.java.team.animal_games.Animal.Builder.TeamDirector;
 
 public class TestBuilder {
     public static void main(String[] arg){

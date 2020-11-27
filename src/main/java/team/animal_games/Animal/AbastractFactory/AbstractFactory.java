@@ -28,7 +28,8 @@ public abstract class AbstractFactory {
     public AbstractFactory(){
         /**
          * @description: create empty warehouse
-         *
+         * @param: null
+         * @return: null
          **/
         System.out.println("AbastractFactory: 默认构造函数： 创建三个空的动物仓库！");
         setSeaAnimals_warehouse(new Vector<Animal>());
@@ -39,7 +40,7 @@ public abstract class AbstractFactory {
     public AbstractFactory(Vector<Animal> seaAnimals_warehouse, Vector<Animal> landAnimals_warehouse, Vector<Animal> skyAnimals_warehouse){
         /**
          * @description: use previous ware_warehouse to create new warehouse
-         *
+         * @param: three Animals' warehouse to create ProductFactory
          * @return: null
          */
         System.out.println("AbastractFactory: 以三个动物仓库为参数的构造函数： 将原来工厂中的动物仓库中的动物转移到当前工厂！");
@@ -72,10 +73,18 @@ public abstract class AbstractFactory {
         SkyAnimals_warehouse = skyAnimals_warehouse;
     }
 
+    /**
+     * @description: abstract method to create animals
+     * @param a string to select animal in RacingFactory
+     * @return a animal created
+     */
     public abstract Animal createSeaAnimals(String a);
     public abstract Animal createLandAnimals(String a);
     public abstract Animal createSkyAnimals(String a);
 
+    /**
+     * @description: print all animals in Animals' wareHouse
+     */
     public void getWarehouse(){
         System.out.println("AbstractFactory: getWarehouse: 获取动物仓库中的动物种类！");
         System.out.println("===== SeaAnimal in " + this.toString() + " ==============");

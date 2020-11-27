@@ -1,7 +1,6 @@
 package main.java.team.animal_games.test;
 
-import main.java.team.animal_games.test.DesignPatternTest.FacadeTest;
-import main.java.team.animal_games.test.DesignPatternTest.TemplateMethodTest;
+import main.java.team.animal_games.test.DesignPatternTest.*;
 
 import java.util.Scanner;
 
@@ -63,6 +62,18 @@ public class TestAll {
                     break;
                 case 2 :
                     FacadeTest.main(new String[]{});
+                    break;
+                case 10 :
+                    TestAbsFactory.main(new String[]{});
+                    break;
+                case 11 :
+                    TestBuilder.main(new String[]{});
+                    break;
+                case 12 :
+                    TestAdapter.main(new String[]{});
+                    break;
+                case 26 :
+                    TestTransferObject.main(new String[]{});
                     break;
                 default :
                     break;

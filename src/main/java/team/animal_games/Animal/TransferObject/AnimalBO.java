@@ -9,12 +9,14 @@ import main.java.team.animal_games.state.StateStarve;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 public class AnimalBO {
 
     List<Animal> animals;
 
+    /**
+     * @description: 无参构造函数，初始化数据库并加入初始数据
+     */
     public AnimalBO(){
         System.out.println("AnimalBO: AnimalBO(): create a database and add some data.");
         animals = new ArrayList<Animal>();
@@ -24,16 +26,29 @@ public class AnimalBO {
         animals.add(animal2);
     }
 
+    /**
+     * @description: delete a animal from list by its name
+     * @param n animal's name to delete
+     */
     public void deleteAnimals(String n){
-        animals.remove(this.getAniaml(n));
+        animals.remove(this.getAnimal(n));
     }
 
+    /**
+     * @description:  get all animals in list
+     * @return return all animals in list
+     */
     public List<Animal> getAllAnimals(){
         System.out.println("AnimalBO: getAllAnimals(): get all animals' data in the DB.");
         return animals;
     }
 
-    public Animal getAniaml(String n){
+    /**
+     * @description: find animal in list by his name
+     * @param n animal's name
+     * @return a animal object
+     */
+    public Animal getAnimal(String n){
         System.out.println("AnimalBO: getAnimal(): get animal in DB by name.");
         for(Animal animal:animals){
             if(animal.getName().equals(n)){
@@ -43,14 +58,21 @@ public class AnimalBO {
         return null;
     }
 
-
+    /**
+     * @description: modify animal's state by using a animal having same name
+     * @param animal a animal instance to update list
+     */
     public void updateAnimal(Animal animal){
         System.out.println("AnimalBo: updateAnimal(): update animals' state");
-        this.getAniaml(animal.getName()).setState(animal.getState());
+        this.getAnimal(animal.getName()).setState(animal.getState());
         System.out.println("Animal: Name = "
                 + animal.getName() +", updated in the database");
     }
 
+    /**
+     * @description: to print a animal's all information
+     * @param an a animal instance
+     */
     public void printAnimal(Animal an){
         System.out.print(this.getAllAnimals().indexOf(an)+" Animal :Name: " +
                 an.getName() +

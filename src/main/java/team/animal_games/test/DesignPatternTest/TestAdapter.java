@@ -1,4 +1,8 @@
-package main.java.team.animal_games.Animal.Adapter;
+package main.java.team.animal_games.test.DesignPatternTest;
+
+import main.java.team.animal_games.Animal.Adapter.Adapter;
+import main.java.team.animal_games.Animal.Adapter.FlyTiger;
+import main.java.team.animal_games.Animal.Adapter.Tiger;
 
 public class TestAdapter {
     public static void main(String[] arg){
