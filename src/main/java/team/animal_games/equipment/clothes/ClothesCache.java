@@ -8,11 +8,19 @@ public class ClothesCache {
             = new Hashtable<String, Clothes>();
 
     public static Clothes getId(String barbellId) {
+        /**
+         * @description: return ID
+         *
+         **/
         Clothes cachedAero = ClothesMap.get(barbellId);
         return (Clothes) cachedAero.clone();
     }
 
     public static void loadCache() {
+        /**
+         * @description: initial objects
+         *
+         **/
         BigClothes bigbarbell = new BigClothes();
         bigbarbell.setId("1");
         ClothesMap.put(bigbarbell.getId(),bigbarbell);

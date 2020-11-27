@@ -7,24 +7,48 @@ public abstract class Basketball implements Cloneable {
     protected int value;
 
     abstract void draw();
+    /**
+     * @description: output
+     *
+     **/
 
     public String getType(){
         return type;
     }
+    /**
+     * @description: return type
+     *
+     **/
 
     public int getValue(){
         return value;
     }
+    /**
+     * @description: return value
+     *
+     **/
 
     public String getId() {
         return id;
     }
+    /**
+     * @description: return id
+     *
+     **/
 
     public void setId(String id) {
         this.id = id;
     }
+    /**
+     * @description: set id
+     *
+     **/
 
     public Object clone() {
+        /**
+         * @description: clone this object
+         *
+         **/
         Object clone = null;
         try {
             clone = super.clone();

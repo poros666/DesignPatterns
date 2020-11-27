@@ -16,13 +16,29 @@ public class GetEquipment {
     public static String getKind(){
         return Kind;
     }
+    /**
+     * @description: return kind
+     *
+     **/
     public static int getPrice(){
         return Price;
     }
+    /**
+     * @description: return price
+     *
+     **/
     public static int getValue(){
         return Value;
     }
+    /**
+     * @description: return value
+     *
+     **/
     public static void getEquipment(String name) {
+        /**
+         * @description: create&combine qualities and equipments
+         *
+         **/
         double ratio = Math.random();
         Quality equipment = (Quality) EquipmentFactory.getEquipment(getRandomColor(ratio));
         equipment.setPrice(getRandomPrice(ratio));
@@ -116,15 +132,31 @@ public class GetEquipment {
         }
     }
     public static void showEquipment(User user, String equipment) {
+        /**
+         * @description: output the combination of user and complete equipment
+         *
+         **/
         System.out.println(" [" + user.getName() + "] : " + equipment);
     }
     private static String getRandomColor(double ratio) {
         return quality[(int)(ratio*quality.length)];
     }
+    /**
+     * @description: create Random Color
+     *
+     **/
     private static int getRandomPrice(double ratio) {
         return (int)((ratio+0.1)*(Math.random()*10+80) );
     }
+    /**
+     * @description: create Random Price
+     *
+     **/
     private static int getRandomMult(double ratio) {
         return (int)((ratio+0.1)*(Math.random()*10+80));
     }
+    /**
+     * @description: create Random multiply
+     *
+     **/
 }

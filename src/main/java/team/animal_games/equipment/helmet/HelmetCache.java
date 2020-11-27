@@ -8,11 +8,19 @@ public class HelmetCache {
             = new Hashtable<String, Helmet>();
 
     public static Helmet getId(String barbellId) {
+        /**
+         * @description: return ID
+         *
+         **/
         Helmet cachedAero = HelmetMap.get(barbellId);
         return (Helmet) cachedAero.clone();
     }
 
     public static void loadCache() {
+        /**
+         * @description: initial objects
+         *
+         **/
         BigHelmet bigbarbell = new BigHelmet();
         bigbarbell.setId("1");
         HelmetMap.put(bigbarbell.getId(),bigbarbell);

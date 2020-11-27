@@ -26,10 +26,22 @@ public class DistributeEquipmentDemo {
     private static String getRandomColor(double ratio) {
         return equipment[(int)(ratio*equipment.length)];
     }
+    /**
+     * @description: create Random Color
+     *
+     **/
     private static int getRandomPrice(double ratio) {
         return (int)((ratio+0.1)*(Math.random()*10+80) );
     }
+    /**
+     * @description: create Random Price
+     *
+     **/
     private static int getRandomMult(double ratio) {
         return (int)((ratio+0.1)*(Math.random()*10+80));
     }
+    /**
+     * @description: create Random Multiply
+     *
+     **/
 }

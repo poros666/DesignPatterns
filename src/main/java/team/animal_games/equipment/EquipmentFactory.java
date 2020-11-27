@@ -6,6 +6,10 @@ public class EquipmentFactory {
     private static final HashMap<String, Equipment> equipMap = new HashMap<>();
 
     public static Equipment getEquipment(String quality) {
+        /**
+         * @description: create&return quality
+         *
+         **/
         Quality equipment = (Quality)equipMap.get(quality);
         if(equipment == null) {
             equipment = new Quality(quality);

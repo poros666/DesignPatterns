@@ -9,7 +9,15 @@ public class EquipmentRepository {
     {
         collection.put(version.getId(),version);
     }
+    /**
+     * @description: create&return EquipmentVersion
+     *
+     **/
     public void update(EquipmentVersion version) throws EquipmentNotFoundException,VersionMismatchException {
+        /**
+         * @description: update&check conflicts in EquipmentVersion
+         *
+         **/
         if (!collection.containsKey(version.getId())) {
             throw new EquipmentNotFoundException("Not found Equipment with id: " + version.getId()+" owner: "+version.getUser()+" name: "+version.getName());
         }
@@ -28,6 +36,10 @@ public class EquipmentRepository {
     }
 
     public EquipmentVersion get(long equipmentId) throws EquipmentNotFoundException {
+        /**
+         * @description: create&check EquipmentVersion
+         *
+         **/
         if (!collection.containsKey(equipmentId)) {
             throw new EquipmentNotFoundException("Not found equipment with id: " + equipmentId);
         }

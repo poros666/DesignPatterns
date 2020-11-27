@@ -8,11 +8,19 @@ public class BasketballCache {
             = new Hashtable<String, Basketball>();
 
     public static Basketball getId(String barbellId) {
+        /**
+         * @description: return ID
+         *
+         **/
         Basketball cachedAero = BasketballMap.get(barbellId);
         return (Basketball) cachedAero.clone();
     }
 
     public static void loadCache() {
+        /**
+         * @description: initial objects
+         *
+         **/
         BigBasketball bigbarbell = new BigBasketball();
         bigbarbell.setId("1");
         BasketballMap.put(bigbarbell.getId(),bigbarbell);

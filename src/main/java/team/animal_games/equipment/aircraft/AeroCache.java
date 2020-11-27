@@ -8,11 +8,19 @@ public class AeroCache {
             = new Hashtable<String, Aircraft>();
 
     public static Aircraft getId(String aeroId) {
+        /**
+         * @description: return ID
+         *
+         **/
         Aircraft cachedAero = aeroMap.get(aeroId);
         return (Aircraft) cachedAero.clone();
     }
 
     public static void loadCache() {
+        /**
+         * @description: initial objects
+         *
+         **/
         Aeroplane aeroplane = new Aeroplane();
         aeroplane.setId("1");
         aeroMap.put(aeroplane.getId(),aeroplane);

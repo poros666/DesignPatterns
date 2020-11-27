@@ -5,4 +5,8 @@ public class EquipmentNotFoundException extends Exception {
     public EquipmentNotFoundException(String message) {
         super(message);
     }
+    /**
+     * @description: override Exception()
+     *
+     **/
 }

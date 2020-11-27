@@ -15,10 +15,22 @@ public class EquipmentDemo {
     private static String getRandomColor(double ratio) {
         return equipment[(int)(ratio*equipment.length)];
     }
+    /**
+     * @description: create Random Color
+     *
+     **/
     private static int getRandomPrice(double ratio) {
         return (int)((ratio+1)*Math.random()*100 );
     }
+    /**
+     * @description: create Random Price
+     *
+     **/
     private static int getRandomMult(double ratio) {
         return (int)((ratio+1)*Math.random()*1000);
     }
+    /**
+     * @description: create Random Multiply
+     *
+     **/
 }

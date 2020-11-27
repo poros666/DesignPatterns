@@ -8,11 +8,19 @@ public class BarbellCache {
             = new Hashtable<String, Barbell>();
 
     public static Barbell getId(String barbellId) {
+        /**
+         * @description: return ID
+         *
+         **/
         Barbell cachedBarbell = BarbellMap.get(barbellId);
         return (Barbell) cachedBarbell.clone();
     }
 
     public static void loadCache() {
+        /**
+         * @description: initial objects
+         *
+         **/
         BigBarbell bigbarbell = new BigBarbell();
         bigbarbell.setId("1");
         BarbellMap.put(bigbarbell.getId(),bigbarbell);
