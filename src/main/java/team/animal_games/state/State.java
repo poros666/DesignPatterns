@@ -1,11 +1,11 @@
 package main.java.team.animal_games.state;
 
 public interface State {
-    public String getState();//获取state名的string形式
+    public String getState();//get the name of state as a String
 
-    public void showState();//输出state
+    public void showState();//output the name of state in the type of String
 
-    public int getStateToInt();//将state转化为对比赛有影响的int值
+    public int getStateToInt();//convert the state to a Integer
 
-    public boolean isNil();//判断该种state是否为空对象
+    public boolean isNil();//judge whether the state is null
 }
