@@ -1,7 +1,6 @@
 package main.java.team.animal_games.competition;
 
 import main.java.team.animal_games.Animal.Animal;
-import main.java.team.animal_games.rule.Rules;
 import main.java.team.animal_games.score.ScoreRecorder;
 import main.java.team.animal_games.situation.Situation;
 
@@ -16,49 +15,53 @@ import java.util.Map;
  **/
 public abstract class Competition {
     protected Animal[][] _contestant = new Animal[3][];//参赛队伍固定为三组，每组队伍都是以一个Animal数组
-    //protected Stadium _stadium;
-    protected Rules _ruleSet;
     protected int _date;//比赛举办日期
     protected Situation _situation;//状况，包含天气和时间，会影响温度和能见度
     protected int[] _competitionResult;//比赛结果，一个长度为3的数组包含本比赛的三支参赛队伍的排名 _competitionResult[0]=1 代表队伍1得第一
 
+    //constructor
     public Competition() {
-        //_ruleSet = new Rules();需要 new 吗？？
         _situation = new Situation();
         System.out.println("Competition::Competition()::\"constructor\"");
     }
 
+    //get competitionResult
     public int[] get_competitionResult() {
         return _competitionResult;
     }
 
+    //get contestant
     public Animal[][] get_contestant() {
         return _contestant;
     }
 
+    //set contestant
     public void set_contestant(Animal[][] _contestant) {
         this._contestant = _contestant;
     }
 
+    //get Date
     public int getDate() {
         return this._date;
     }
 
+    //set Date
     public void setDate(int date) {
         this._date = date;
     }
 
-    abstract public int[] getScore(ScoreRecorder scoreRecorder);//获取比赛结束后各队获得的积分(使用时请区别于 排名 )
+    //获取比赛结束后各队获得的积分(使用时请区别于 排名 )
+    abstract public int[] getScore(ScoreRecorder scoreRecorder);
 
     //模拟比赛过程的三个函数如下(此处使用了设计模式：Template Method)
-
+    //runCompetition()用于整合三个函数
     public void runCompetition(){
         startCompetition();
         race();
         prizeGiving();
     }
 
-    //startCompetition()用于模拟比赛开始的情况，属于父类实现的函数，没有实际用途
+    //startCompetition()用于模拟比赛开始的情况，属于父类实现的函数
     public void startCompetition() {
         System.out.println("Competition::startCompetition()::\"competition started!\"");
         Map<String, Integer> situation = _situation.getSituation();

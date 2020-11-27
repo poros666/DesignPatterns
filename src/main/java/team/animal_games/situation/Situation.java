@@ -22,8 +22,8 @@ public class Situation {
     //将天气和时间两个子系统利用Situation这个类包装起来，以便快速的获取 温度和能见度 这两个 和 天气及时间 都相关的属性
     //这样为了获取温度和能见度，外界不再需要与连哥哥子系统耦合，而只需要通过外观类获取信息和操作
 
-    private TimePeriod _time;
-    private Weather _weather;
+    private TimePeriod _time;//TimePeriod对象
+    private Weather _weather;//Weather对象
 
     //随机生成天气和时间
     public Situation(String time, String weather) {
