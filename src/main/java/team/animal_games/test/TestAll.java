@@ -104,6 +104,30 @@ public class TestAll {
                 case 15:
                     NullObjectTest.main(new String[]{});
                     break;
+                case 17:
+                    MementoTest.main(new String[]{});
+                    break;
+                case 18:
+                    CopyOnWriteTest.main(new String[]{});
+                    break;
+                case 19:
+                    ReferenceCountingTest.main(new String[]{});
+                    break;
+                case 20:
+                    SharableTest.main(new String[]{});
+                    break;
+                case 21:
+                    BridgeTest.main(new String[]{});
+                    break;
+                case 22:
+                    FactoryMethodTest.main(new String[]{});
+                    break;
+                case 23:
+                    SpecificationTest.main(new String[]{});
+                    break;
+                case 24:
+                    CriteriaTest.main(new String[]{});
+                    break;
                 case 26:
                     TestTransferObject.main(new String[]{});
                     break;
