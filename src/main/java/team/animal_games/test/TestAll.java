@@ -50,6 +50,7 @@ public class TestAll {
             System.out.println("=                      31 Composite                                =");
             System.out.println("=                      32 Iterator                                 =");
             System.out.println("=                      33 Business Delegate Pattern                =");
+            System.out.println("=                      34 ceremony comprehensive test              =");
             System.out.println("=                       0 EXIT TEST                                =");
             System.out.println("=========================Chose you action!==========================");
             if (in1.hasNextInt()) {
@@ -106,12 +107,27 @@ public class TestAll {
                 case 26:
                     TestTransferObject.main(new String[]{});
                     break;
+                case 27:
+                    ProxyTest.main(new String[]{});
+                    break;
+                case 28:
+                    CommandTest.main(new String[]{});
+                    break;
+                case 29:
+                    ChanOfResponsibilitiesTest.main(new String[]{});
+                    break;
                 case 31:
                     CompositeTest.main(new String[]{});
+                    break;
                 case 32:
                     IteratorTest.main(new String[]{});
+                    break;
                 case 33:
                     BusinessDelegatePatternTest.main(new String[]{});
+                    break;
+                case 34:
+                    CeremonyTest.main(new String[]{});
+                    break;
                 default:
                     break;
             }

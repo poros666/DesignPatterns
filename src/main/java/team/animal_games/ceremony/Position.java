@@ -36,12 +36,12 @@ public class Position
     {
         if(n+currentNum>max)
         {
-            System.out.println("can not room");
+            System.out.println(name+"can not room");
             return false;
         }
         else
         {
-            System.out.println("can room");
+            System.out.println(name+"can room");
             return true;
         }
     }

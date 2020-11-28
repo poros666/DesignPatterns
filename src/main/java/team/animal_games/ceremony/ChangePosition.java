@@ -1,5 +1,7 @@
 package main.java.team.animal_games.ceremony;
 
+import java.util.Iterator;
+
 //changePosition is a concrete class extending BaseCommand, this class implement the function to
 //change receivers' position without using chain of responsibilities pattern, give the kind of command to leaders
 //can test both command pattern and proxy pattern
