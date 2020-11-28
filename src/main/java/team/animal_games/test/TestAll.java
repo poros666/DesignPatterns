@@ -64,6 +64,15 @@ public class TestAll {
                 case 2:
                     FacadeTest.main(new String[]{});
                     break;
+                case 3:
+                    ObserverTest.main(new String[]{});
+                    break;
+                case 4:
+                    SingletonTest.main(new String[]{});
+                    break;
+                case 5:
+                    MarkerInterfaceTest.main(new String[]{});
+                    break;
                 case 6:
                     PrototypeTest.main(new String[]{});
                     break;
