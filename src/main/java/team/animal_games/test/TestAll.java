@@ -104,6 +104,9 @@ public class TestAll {
                 case 15:
                     NullObjectTest.main(new String[]{});
                     break;
+                case 16:
+                    StrategyTest.main(new String[]{});
+                    break;
                 case 17:
                     MementoTest.main(new String[]{});
                     break;
@@ -128,6 +131,9 @@ public class TestAll {
                 case 24:
                     CriteriaTest.main(new String[]{});
                     break;
+                case 25:
+                    InterpreterTest.main(new String[]{});
+                    break;
                 case 26:
                     TestTransferObject.main(new String[]{});
                     break;
@@ -139,6 +145,9 @@ public class TestAll {
                     break;
                 case 29:
                     ChanOfResponsibilitiesTest.main(new String[]{});
+                    break;
+                case 30:
+                    DecoratorTest.main(new String[]{});
                     break;
                 case 31:
                     CompositeTest.main(new String[]{});
