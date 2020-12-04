@@ -50,12 +50,14 @@ public class InterpreterContext {
 
     /**
      * Main function to inspect qualification of the animal.
-     * @param animal
-     * @param act
-     * @param level
+     * @param str
      * @return qualification true or false.
      */
-    public boolean qualificationInspection(String animal, String act, String level){
+    public boolean qualificationInspection(String str){
+        String[] tokens = str.split(" ");
+        String animal = tokens[0];
+        String act = tokens[1];
+        String level = tokens[2];
         fly = new TerminalExpression(flyAnimal);
         swim = new TerminalExpression(swimAnimal);
         run = new TerminalExpression(runAnimal);

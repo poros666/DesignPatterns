@@ -150,15 +150,15 @@ public class InterpreterTest {
             }
 
             System.out.println("\nNow please enter query by order of animal , action , race level");
-            System.out.println("\nanimal : ");
-            testSubject = scanner.next();
-            System.out.println("\naction : ");
-            action = scanner.next();
-            System.out.println("\nrace level : ");
-            level = scanner.next();
+            scanner.useDelimiter("\n");
+            String str = scanner.next();
+            System.out.println(str);
+            String[] tokens = str.split(" ");
+            testSubject = tokens[0];
+            action = tokens[1];
+            level = tokens[2];
 
-
-            if(interpreterContext.qualificationInspection(testSubject, action, level)){
+            if(interpreterContext.qualificationInspection(str)){
                 System.out.println(testSubject + " can " + action + " and can participate " + level + " race ");
             }
             else{
